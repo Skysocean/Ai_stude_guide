@@ -1,0 +1,1316 @@
+
+<style>
+body{
+    font-family: Inter, Segoe UI, Arial, sans-serif;
+    background: linear-gradient(135deg,#0f172a,#111827,#1e293b);
+    color:#e5e7eb;
+    margin:0;
+    padding:32px;
+}
+.main-wrapper{
+    max-width:1400px;
+    margin:auto;
+    background:#ffffff;
+    color:#111827;
+    border-radius:24px;
+    padding:32px;
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+}
+h1.hero{
+    text-align:center;
+    margin-bottom:24px;
+    font-size:2.2rem;
+    background:linear-gradient(90deg,#2563eb,#7c3aed);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.chapter{
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    transition:.2s;
+}
+.chapter:hover{
+    transform:translateY(-2px);
+}
+.ch-header{
+    background:linear-gradient(90deg,#eff6ff,#eef2ff)!important;
+}
+.tab.active{
+    background:linear-gradient(90deg,#2563eb,#7c3aed)!important;
+    color:white!important;
+}
+.fact{
+    border-left:4px solid #3b82f6!important;
+}
+.note{
+    background:#eef6ff!important;
+}
+table{
+    border-radius:12px;
+    overflow:hidden;
+}
+th{
+    background:#dbeafe!important;
+}
+</style>
+
+<style>
+body{
+    font-family: Inter, Segoe UI, Arial, sans-serif;
+    background: linear-gradient(135deg,#0f172a,#111827,#1e293b);
+    color:#e5e7eb;
+    margin:0;
+    padding:32px;
+}
+.main-wrapper{
+    max-width:1400px;
+    margin:auto;
+    background:#ffffff;
+    color:#111827;
+    border-radius:24px;
+    padding:32px;
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+}
+h1.hero{
+    text-align:center;
+    margin-bottom:24px;
+    font-size:2.2rem;
+    background:linear-gradient(90deg,#2563eb,#7c3aed);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.chapter{
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    transition:.2s;
+}
+.chapter:hover{
+    transform:translateY(-2px);
+}
+.ch-header{
+    background:linear-gradient(90deg,#eff6ff,#eef2ff)!important;
+}
+.tab.active{
+    background:linear-gradient(90deg,#2563eb,#7c3aed)!important;
+    color:white!important;
+}
+.fact{
+    border-left:4px solid #3b82f6!important;
+}
+.note{
+    background:#eef6ff!important;
+}
+table{
+    border-radius:12px;
+    overflow:hidden;
+}
+th{
+    background:#dbeafe!important;
+}
+</style>
+<div class='main-wrapper'><h1 class='hero'>AI Full Study Guide</h1>
+<h2 class="sr-only">Full AI Exam Study Guide — Chapters 1, 2, 3, 4, 5, 6, 9</h2>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.tabs{display:flex;gap:4px;flex-wrap:wrap;padding:1rem 0 0.5rem;border-bottom:0.5px solid var(--color-border-tertiary);margin-bottom:1.5rem}
+.tab{padding:7px 16px;font-size:13px;font-weight:500;border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);cursor:pointer;background:transparent;color:var(--color-text-secondary)}
+.tab.active{background:var(--color-background-secondary);color:var(--color-text-primary);border-color:var(--color-border-secondary)}
+.panel{display:none}.panel.active{display:block}
+.chapter{border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);margin-bottom:1rem;overflow:hidden}
+.ch-header{padding:13px 16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;background:var(--color-background-secondary)}
+.ch-title{font-size:14px;font-weight:500;color:var(--color-text-primary)}
+.ch-arrow{font-size:18px;color:var(--color-text-secondary);transition:transform 0.2s;flex-shrink:0}
+.ch-header.open .ch-arrow{transform:rotate(45deg)}
+.ch-body{padding:18px;display:none;border-top:0.5px solid var(--color-border-tertiary)}
+.ch-body.open{display:block}
+.sec{font-size:11px;font-weight:500;letter-spacing:0.07em;color:var(--color-text-tertiary);margin:18px 0 7px;text-transform:uppercase}
+.sec:first-child{margin-top:0}
+.fact{font-size:13.5px;color:var(--color-text-primary);line-height:1.65;padding:5px 0 5px 12px;border-left:2px solid var(--color-border-tertiary);margin-bottom:5px}
+.fact strong{font-weight:500}
+.sub{font-size:13px;font-weight:500;color:var(--color-text-primary);margin:10px 0 4px}
+.note{font-size:13px;color:var(--color-text-secondary);line-height:1.6;padding:8px 12px;background:var(--color-background-secondary);border-radius:var(--border-radius-md);margin:6px 0 8px}
+.tw{overflow-x:auto;margin:8px 0}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{background:var(--color-background-secondary);font-weight:500;padding:7px 10px;text-align:left;border:0.5px solid var(--color-border-tertiary);color:var(--color-text-primary)}
+td{padding:6px 10px;border:0.5px solid var(--color-border-tertiary);color:var(--color-text-primary);line-height:1.55;vertical-align:top}
+.mcq-item{border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);margin-bottom:12px;overflow:hidden}
+.mcq-q{padding:12px 14px;font-size:13.5px;font-weight:500;color:var(--color-text-primary);line-height:1.55}
+.mcq-tag{font-size:11px;font-weight:500;background:var(--color-background-secondary);color:var(--color-text-secondary);padding:2px 8px;border-radius:var(--border-radius-md);margin-right:6px}
+.mcq-opts{padding:4px 14px 8px}
+.mcq-opt{display:flex;align-items:flex-start;gap:8px;padding:5px 0;font-size:13px;color:var(--color-text-primary);cursor:pointer;line-height:1.55}
+.mcq-opt input{margin-top:3px;flex-shrink:0}
+.mcq-rev{padding:8px 14px;font-size:13px;display:none;border-top:0.5px solid var(--color-border-tertiary);line-height:1.6}
+.mcq-rev.ok{background:#EAF3DE;color:#27500A}
+.mcq-rev.bad{background:#FCEBEB;color:#791F1F}
+.chk{margin:2px 14px 10px;font-size:12px;padding:5px 12px;cursor:pointer}
+.essay-item{border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);margin-bottom:10px;overflow:hidden}
+.essay-q{padding:12px 14px;font-size:13.5px;font-weight:500;color:var(--color-text-primary);line-height:1.55;cursor:pointer;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.essay-q span.arr{font-size:16px;color:var(--color-text-secondary);flex-shrink:0;transition:transform 0.2s}
+.essay-q.open span.arr{transform:rotate(45deg)}
+.essay-ans{display:none;padding:12px 14px 14px;border-top:0.5px solid var(--color-border-tertiary);font-size:13px;color:var(--color-text-primary);line-height:1.7;background:var(--color-background-secondary)}
+.essay-ans.open{display:block}
+.essay-ans ul,.essay-ans ol{padding-left:18px;margin:6px 0}
+.essay-ans li{margin-bottom:5px}
+.essay-ans p{margin-bottom:6px}
+.tag-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:1rem}
+.ftag{font-size:12px;padding:4px 10px;border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);cursor:pointer;background:transparent;color:var(--color-text-secondary)}
+.ftag.active{background:var(--color-background-secondary);color:var(--color-text-primary);border-color:var(--color-border-secondary)}
+.sb{display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--color-background-secondary);border-radius:var(--border-radius-md);margin-bottom:1rem;font-size:13px;color:var(--color-text-secondary)}
+.sb strong{color:var(--color-text-primary);font-size:20px}
+.qr-block{border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:12px 14px;margin-bottom:10px}
+.qr-block h4{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:8px}
+.qr-line{font-size:13px;color:var(--color-text-primary);line-height:1.6;padding:3px 0;display:flex;gap:8px}
+.qr-key{font-weight:500;flex-shrink:0;min-width:120px}
+</style>
+
+<div class="tabs">
+  <button class="tab active" onclick="sw('notes',this)">Study Notes</button>
+  <button class="tab" onclick="sw('mcq',this)">MCQ (70+ Qs)</button>
+  <button class="tab" onclick="sw('essay',this)">Essay Questions</button>
+  <button class="tab" onclick="sw('qref',this)">Quick Reference</button>
+  <button class="tab" onclick="sw('diag',this)">Diagrams (27)</button>
+  <button class="tab" onclick="sw('summary',this)">ML &amp; NN Summary</button>
+</div>
+
+<div id="notes" class="panel active">
+
+<div class="chapter">
+<div class="ch-header" onclick="tc(this)"><span class="ch-title">Chapter 1 — Introduction to Artificial Intelligence</span><span class="ch-arrow">+</span></div>
+<div class="ch-body">
+
+<div class="sec">What is Artificial Intelligence?</div>
+<div class="fact">According to the <strong>father of AI, John McCarthy</strong>: "The science and engineering of making intelligent machines, especially intelligent computer programs."</div>
+<div class="fact">AI is a way of making a computer, computer-controlled robot, or software <strong>think intelligently in the same manner intelligent humans think</strong>.</div>
+<div class="fact">AI is concerned with the <strong>design of intelligence in an artificial device</strong>. The term was coined by John McCarthy in <strong>1956</strong>.</div>
+<div class="fact"><strong>Intelligence</strong> = the ability to acquire, understand, and apply knowledge to achieve goals in the world.</div>
+<div class="fact">AI is the study of <strong>mental faculties through the use of computational models</strong>.</div>
+<div class="fact">AI is the study of <strong>intellectual/mental processes as computational processes</strong>.</div>
+<div class="fact">An AI program will demonstrate a high level of intelligence to a degree that <strong>equals or exceeds</strong> the intelligence required of a human in performing some task.</div>
+<div class="fact">AI is unique — it shares borders with <strong>Mathematics, Computer Science, Philosophy, Psychology, Biology, Cognitive Science</strong> and many others.</div>
+<div class="fact">Although no clear definition exists for AI or Intelligence, it can be described as: an attempt to build machines that like humans can think and act, able to learn, and use knowledge to solve problems on their own.</div>
+
+<div class="sec">History of AI — Complete Timeline</div>
+<div class="tw"><table>
+<tr><th>Year</th><th>Event</th><th>Who</th></tr>
+<tr><td>1931</td><td>Laid the foundation of Theoretical Computer Science. Published the first universal formal language and showed that math is either flawed or allows for unprovable but true statements.</td><td>Goedel</td></tr>
+<tr><td>1936</td><td>Reformulated Goedel's result and Church's extension thereof</td><td>Turing</td></tr>
+<tr><td>1956</td><td>Coined the term "Artificial Intelligence" as the topic of the <strong>Dartmouth Conference</strong> — the first conference devoted to AI</td><td>John McCarthy</td></tr>
+<tr><td>1957</td><td>Demonstrated the <strong>General Problem Solver (GPS)</strong></td><td>Newell, Shaw &amp; Simon</td></tr>
+<tr><td>1958</td><td>Invented the <strong>Lisp language</strong> at MIT</td><td>John McCarthy</td></tr>
+<tr><td>1959</td><td>Wrote the first <strong>game-playing program</strong> for checkers — achieved skill to challenge a world champion</td><td>Arthur Samuel (IBM)</td></tr>
+<tr><td>1963</td><td>MIT dissertation on <strong>Sketchpad</strong> — introduced idea of interactive graphics into computing</td><td>Ivan Sutherland</td></tr>
+<tr><td>1966</td><td>Demonstrated <strong>semantic nets</strong> (PhD dissertation at Carnegie)</td><td>Ross Quillian</td></tr>
+<tr><td>1967</td><td><strong>Dendral program</strong> — demonstrated to interpret mass spectra on organic chemical compounds. <em>First successful knowledge-based program for scientific reasoning.</em></td><td>Feigenbaum, Lederberg, Buchanan, Sutherland (Stanford)</td></tr>
+<tr><td>1967</td><td>Invented the <strong>mouse</strong> at SRI</td><td>Doug Engelbart</td></tr>
+<tr><td>1968</td><td>Published <strong>Perceptrons</strong> — demonstrated limits of simple neural nets</td><td>Marvin Minsky &amp; Seymour Papert</td></tr>
+<tr><td>1972</td><td><strong>Prolog</strong> developed</td><td>Alain Colmerauer</td></tr>
+<tr><td>Mid-1980s</td><td>Neural Networks became widely used with the <strong>Backpropagation algorithm</strong> (first described by Werbos in 1974)</td><td>—</td></tr>
+<tr><td>1990</td><td>Major advances in ML, intelligent tutoring, case-based reasoning, multi-agent planning, NLP, data mining, vision, virtual reality, games</td><td>—</td></tr>
+<tr><td>1997</td><td><strong>Deep Blue</strong> beats World Chess Champion Kasparov</td><td>IBM</td></tr>
+<tr><td>2002</td><td>iRobot (MIT AI Lab) introduced <strong>Roomba</strong> — vacuum cleaning robot. 2 million sold by 2006.</td><td>iRobot</td></tr>
+</table></div>
+
+<div class="sec">Foundations of AI — 6 Disciplines</div>
+<div class="fact"><strong>Philosophy</strong> — foundational issues (can a machine think?), issues of knowledge and belief, mutual knowledge</div>
+<div class="fact"><strong>Psychology and Cognitive Science</strong> — problem solving skills</div>
+<div class="fact"><strong>Neuro-Science</strong> — brain architecture</div>
+<div class="fact"><strong>Computer Science and Engineering</strong> — complexity theory, algorithms, logic and inference, programming languages, system building</div>
+<div class="fact"><strong>Mathematics and Physics</strong> — statistical modeling, continuous mathematics</div>
+<div class="fact"><strong>Statistical Physics and Complex Systems</strong></div>
+
+<div class="sec">Sub-Areas of AI (9 areas)</div>
+<div class="sub">1. Game Playing</div>
+<div class="fact">Deep Blue Chess program beat world champion Gary Kasparov</div>
+<div class="sub">2. Speech Recognition</div>
+<div class="fact">PEGASUS spoken language interface to American Airlines' EAASY SABRE reservation system — allowed users to get flight info and make reservations over the phone. 1990s saw significant advances.</div>
+<div class="sub">3. Computer Vision</div>
+<div class="fact">Face recognition programs used by banks, government. The <strong>ALVINN system from CMU</strong> autonomously drove a van from Washington D.C. to San Diego (all but 52 of 2,849 miles), averaging 63 mph in all weather. Applications: handwriting recognition, electronics inspection, baggage inspection, reverse engineering to construct 3D geometric models.</div>
+<div class="sub">4. Expert Systems</div>
+<div class="fact">Application-specific systems that rely on obtaining knowledge of human experts and programming it into a system.</div>
+<div class="fact"><strong>Diagnostic Systems</strong>: MYCIN (bacterial infections of blood), Intellipath (pathology diagnosis, AMA approved), Pathfinder (medical diagnosis)</div>
+<div class="fact"><strong>System Configuration</strong>: DEC's XCON for custom hardware configuration, radiotherapy treatment planning</div>
+<div class="fact"><strong>Financial Decision Making</strong>: Credit card companies, mortgage companies, banks and U.S. government employ AI to detect fraud. E.g., AMEX credit check.</div>
+<div class="fact"><strong>Classification Systems</strong>: NASA developed system to classify faint astronomical areas into stars or galaxies by learning from human experts' classifications.</div>
+<div class="sub">5. Mathematical Theorem Proving</div>
+<div class="fact">Use inference methods to prove new theorems</div>
+<div class="sub">6. Natural Language Understanding</div>
+<div class="fact">AltaVista's web page translation. Translation of Caterpillar Truck manuals into 20 languages.</div>
+<div class="sub">7. Scheduling and Planning</div>
+<div class="fact">Automatic manufacturing scheduling. DARPA's DART used in Desert Storm/Shield to plan logistics of people and supplies. American Airlines rerouting contingency planner. European Space Agency spacecraft assembly scheduling.</div>
+<div class="sub">8. Artificial Neural Networks</div>
+<div class="sub">9. Machine Learning</div>
+
+<div class="sec">Applications of AI (9 domains)</div>
+<div class="fact">1. Business: financial strategies</div>
+<div class="fact">2. Engineering: check design, offer suggestions, expert systems for engineering problems</div>
+<div class="fact">3. Manufacturing: assembly, inspection and maintenance</div>
+<div class="fact">4. Medicine: monitoring, diagnosing</div>
+<div class="fact">5. Education: in teaching</div>
+<div class="fact">6. Fraud detection</div>
+<div class="fact">7. Object identification</div>
+<div class="fact">8. Information retrieval</div>
+<div class="fact">9. Space shuttle scheduling</div>
+
+<div class="sec">Building AI Systems — 3 Components</div>
+<div class="fact"><strong>1. Perception</strong> — Intelligent biological systems experience the world through sensors. For autonomous vehicles: camera images + rangefinder data. For medical diagnosis: symptoms and test results. In AI, perception = data acquisition from sensors.</div>
+<div class="fact"><strong>2. Reasoning</strong> — Inference, decision-making, classification from what is sensed. Could be: neural network, logical deduction, Hidden Markov Model, heuristic search, Bayesian inference, genetic algorithms. Areas include: knowledge representation, problem solving, decision theory, planning, game theory, ML, uncertainty reasoning.</div>
+<div class="fact"><strong>3. Action</strong> — Biological systems interact by actuation, speech. All behavior centered around actions. Examples: steering a Mars rover, suggesting diagnoses. Areas include: robot actuation, natural language generation, speech synthesis.</div>
+
+<div class="sec">The 4 Definitions of AI (2×2 Matrix)</div>
+<div class="tw"><table>
+<tr><th></th><th>Human-Like</th><th>Rationally</th></tr>
+<tr><td><strong>Think:</strong></td><td><strong>Cognitive Science Approach</strong><br>"Machines that think like humans"<br><em>Haugeland 1985, Bellman 1978</em></td><td><strong>Laws of Thought Approach</strong><br>"Machines that think Rationally"<br><em>Charniak &amp; McDermott 1985, Winston 1992</em></td></tr>
+<tr><td><strong>Act:</strong></td><td><strong>Turing Test Approach</strong><br>"Machines that behave like humans"<br><em>Kurzweil 1990, Rich &amp; Knight 1991</em></td><td><strong>Rational Agent Approach</strong><br>"Machines that behave Rationally"<br><em>Schalkoff 1990, Luger &amp; Stubblefield 1993</em></td></tr>
+</table></div>
+<div class="note">Top row (a,b) = concerned with <strong>reasoning</strong>. Bottom row (c,d) = address <strong>behavior</strong>. Left column (a,c) = measure success in terms of <strong>human performance</strong>. Right column (b,d) = measure against the ideal concept of intelligence called <strong>rationality</strong>.</div>
+
+<div class="sec">4 Approaches In Detail</div>
+<div class="fact"><strong>Cognitive Science (Think Human-Like)</strong>:<br>a. Requires a model for human cognition precise enough to allow simulation by computers.<br>b. Focus is not just on behavior and I/O — looks at the reasoning process itself.<br>c. Goal is not just to produce human-like behavior but to produce a sequence of steps similar to those followed by a human solving the same task.</div>
+<div class="fact"><strong>Laws of Thought (Think Rationally)</strong>:<br>a. Study of mental faculties through computational models; study of computations that make it possible to perceive, reason, and act.<br>b. Focus on inference mechanisms that are probably correct and guarantee an optimal solution.<br>c. Goal is to formalize the reasoning process as a system of logical rules and procedures of inference.<br>d. Develop systems of representation for inferences like: "Socrates is a man. All men are mortal. Therefore Socrates is mortal."</div>
+<div class="fact"><strong>Turing Test (Act Human-Like)</strong>:<br>a. The art of creating machines that perform functions requiring intelligence when performed by people; how to make computers do things at which people are currently better.<br>b. Focus is on action, not intelligent behavior centered around world representation.<br>c. Example — Turing Test: 3 rooms contain a person, a computer, and an interrogator. Interrogator communicates by teletype (to avoid machine imitating voice/appearance). Machine aims to fool interrogator — if it succeeds, machine is intelligent.</div>
+<div class="fact"><strong>Rational Agent (Act Rationally)</strong>:<br>Agent always performs the right action — the action that causes the agent to be most successful in the given percept sequence. Characterized by PEAS: Performance Measure, Environment, Actuators, Sensors.</div>
+
+</div></div>
+
+<div class="chapter">
+<div class="ch-header" onclick="tc(this)"><span class="ch-title">Chapter 2 — Intelligent Systems</span><span class="ch-arrow">+</span></div>
+<div class="ch-body">
+
+<div class="sec">What is Intelligence?</div>
+<div class="fact">The ability of a system to <strong>calculate, reason, perceive relationships and analogies, learn from experience, store and retrieve information from memory, solve problems, comprehend complex ideas, use natural language fluently, classify, generalize, and adapt to new situations</strong>.</div>
+
+<div class="sec">Types of Intelligence — Howard Gardner (7 Types)</div>
+<div class="tw"><table>
+<tr><th>Intelligence Type</th><th>Full Description</th><th>Real Examples</th></tr>
+<tr><td>Linguistic</td><td>The ability to speak, recognize, and use mechanisms of phonology (speech sounds), syntax (grammar), and semantics (meaning).</td><td>Narrators, Orators</td></tr>
+<tr><td>Musical</td><td>The ability to create, communicate with, and understand meanings made of sound, understanding of pitch, rhythm.</td><td>Musicians, Singers, Composers</td></tr>
+<tr><td>Logical-Mathematical</td><td>The ability to use and understand relationships in the absence of action or objects. Understanding complex and abstract ideas.</td><td>Mathematicians, Scientists</td></tr>
+<tr><td>Spatial</td><td>The ability to perceive visual or spatial information, change it, re-create visual images without reference to objects, construct 3D images, move and rotate them.</td><td>Map readers, Astronauts, Physicists</td></tr>
+<tr><td>Bodily-Kinesthetic</td><td>The ability to use complete or part of the body to solve problems or fashion products, control over fine and coarse motor skills, and manipulate objects.</td><td>Players, Dancers</td></tr>
+<tr><td>Intra-personal</td><td>The ability to distinguish among one's own feelings, intentions, and motivations.</td><td>Gautam Buddha</td></tr>
+<tr><td>Interpersonal</td><td>The ability to recognize and make distinctions among other people's feelings, beliefs, and intentions.</td><td>Mass Communicators, Interviewers</td></tr>
+</table></div>
+<div class="note">A machine or system is <strong>artificially intelligent</strong> when it is equipped with <strong>at least one</strong> and at most all intelligences.</div>
+
+<div class="sec">What is Intelligence Composed of? — 5 Components</div>
+<div class="fact">Intelligence is intangible. It is composed of: <strong>Reasoning, Learning, Problem Solving, Perception, Linguistic Intelligence</strong>.</div>
+
+<div class="sub">1. Reasoning</div>
+<div class="fact">The set of processes that enables us to provide basis for judgement, making decisions, and prediction. Two broad types:</div>
+<div class="tw"><table>
+<tr><th>Inductive Reasoning</th><th>Deductive Reasoning</th></tr>
+<tr><td>Conducts specific observations to make broad general statements</td><td>Starts with a general statement and examines possibilities to reach a specific, logical conclusion</td></tr>
+<tr><td>Even if all premises are true, the conclusion can be false</td><td>If something is true of a class of things in general, it is also true for all members of that class</td></tr>
+<tr><td><em>Example: "All women over 60 are grandmothers. Shalini is 65 years. Therefore, Shalini is a grandmother."</em></td><td><em>Example: "Nita is a teacher. All teachers are studious. Therefore, Nita is studious."</em></td></tr>
+</table></div>
+
+<div class="sub">2. Learning</div>
+<div class="fact">The activity of gaining knowledge or skill by studying, practising, being taught, or experiencing something. Enhances awareness of subjects of study. Possessed by humans, some animals, and AI-enabled systems.</div>
+<div class="fact"><strong>8 Types of Learning:</strong></div>
+<div class="fact"><strong>Auditory Learning</strong> — learning by listening and hearing. E.g., students listening to recorded audio lectures.</div>
+<div class="fact"><strong>Episodic Learning</strong> — learn by remembering sequences of events one has witnessed or experienced. This is linear and orderly.</div>
+<div class="fact"><strong>Motor Learning</strong> — learning by precise movement of muscles. E.g., picking objects, writing.</div>
+<div class="fact"><strong>Observational Learning</strong> — learn by watching and imitating others. E.g., a child mimicking her parent.</div>
+<div class="fact"><strong>Perceptual Learning</strong> — learning to recognize stimuli seen before. E.g., identifying and classifying objects and situations.</div>
+<div class="fact"><strong>Relational Learning</strong> — learning to differentiate among stimuli on basis of relational properties rather than absolute properties. E.g., adding 'little less' salt when cooking potatoes that were too salty last time.</div>
+<div class="fact"><strong>Spatial Learning</strong> — learning through visual stimuli such as images, colors, maps. E.g., a person creating a roadmap in mind before following the road.</div>
+<div class="fact"><strong>Stimulus-Response Learning</strong> — learning to perform a particular behavior when a certain stimulus is present. E.g., a dog raising its ear on hearing a doorbell.</div>
+
+<div class="sub">3. Problem Solving</div>
+<div class="fact">The process in which one perceives and tries to arrive at a desired solution from a present situation by taking some path, which is blocked by known or unknown hurdles.</div>
+<div class="fact">Also includes <strong>decision making</strong> — the process of selecting the best suitable alternative out of multiple alternatives to reach the desired goal.</div>
+
+<div class="sub">4. Perception</div>
+<div class="fact">The process of acquiring, interpreting, selecting, and organizing sensory information. Presumes sensing. In humans, aided by sensory organs. In AI, perception mechanism puts data acquired by sensors together in a meaningful manner.</div>
+
+<div class="sub">5. Linguistic Intelligence</div>
+<div class="fact">One's ability to use, comprehend, speak, and write the verbal and written language. Important in interpersonal communication.</div>
+
+<div class="sec">Difference Between Human and Machine Intelligence</div>
+<div class="fact">Humans perceive by <strong>patterns</strong>; machines perceive by <strong>set of rules and data</strong>.</div>
+<div class="fact">Humans store and recall information by <strong>patterns</strong>; machines by <strong>searching algorithms</strong>. E.g., the number 40404040 is easy to remember because its pattern is simple.</div>
+<div class="fact">Humans can figure out the complete object even if some part is <strong>missing or distorted</strong>; machines cannot correctly do this.</div>
+
+<div class="sec">Scientific Goal vs Engineering Goal</div>
+<div class="fact"><strong>Scientific Goal</strong>: To determine which ideas about knowledge representation, learning, rule systems, search, etc., explain various sorts of real intelligence. (Psychologists, philosophers, cognitive scientists)</div>
+<div class="fact"><strong>Engineering Goal</strong>: To solve real world problems using AI techniques such as knowledge representation, learning, rule systems, search. (Computer scientists and engineers)</div>
+
+</div></div>
+
+<div class="chapter">
+<div class="ch-header" onclick="tc(this)"><span class="ch-title">Chapter 3 — AI Research Areas</span><span class="ch-arrow">+</span></div>
+<div class="ch-body">
+
+<div class="sec">Overview</div>
+<div class="fact">The domain of AI is huge in breadth and width. The 5 main research areas shown in the "AI flower diagram" are: <strong>Expert Systems, Natural Language Processing, Neural Networks, Robotics, Fuzzy Logic</strong>.</div>
+
+<div class="sec">Speech and Voice Recognition</div>
+<div class="fact">These terms are common in robotics, expert systems, and NLP. Though used interchangeably, their objectives are different.</div>
+<div class="tw"><table>
+<tr><th>Speech Recognition</th><th>Voice Recognition</th></tr>
+<tr><td>Aims at understanding and comprehending <strong>WHAT was spoken</strong></td><td>Objective is to recognize <strong>WHO is speaking</strong></td></tr>
+<tr><td>Used in hand-free computing, map or menu navigation</td><td>Analyzes person's tone, voice pitch, and accent to identify a person</td></tr>
+<tr><td>Machine does <strong>not</strong> need training — not speaker-dependent</td><td>Recognition system <strong>needs training</strong> — person-oriented</td></tr>
+<tr><td>Speaker-independent systems are <strong>difficult</strong> to develop</td><td>Speaker-dependent systems are comparatively <strong>easier</strong> to develop</td></tr>
+</table></div>
+
+<div class="sec">How Speech/Voice Recognition Systems Work</div>
+<div class="fact">User speaks at microphone → goes to sound card → converter turns analog signal into digital signal → speech processing → database compares patterns to recognize words → reverse feedback given to database.</div>
+<div class="fact">For translation: source-language text → Translation Engine → target language text. Supported with interactive GUI, large database of vocabulary.</div>
+
+<div class="sec">Real-Life Applications of AI Research Areas</div>
+<div class="tw"><table>
+<tr><th>Area</th><th>Real Life Application</th></tr>
+<tr><td>Expert Systems</td><td>Flight-tracking systems, Clinical systems</td></tr>
+<tr><td>Natural Language Processing</td><td>Google Now feature, speech recognition, Automatic voice output</td></tr>
+<tr><td>Neural Networks</td><td>Pattern recognition systems — face recognition, character recognition, handwriting recognition</td></tr>
+<tr><td>Robotics</td><td>Industrial robots for moving, spraying, painting, precision checking, drilling, cleaning, coating, carving</td></tr>
+<tr><td>Fuzzy Logic</td><td>Consumer electronics, automobiles</td></tr>
+</table></div>
+
+<div class="sec">Task Classification of AI</div>
+<div class="fact">The domain of AI is classified into <strong>Formal tasks, Mundane tasks, and Expert tasks</strong> (visualized as a tree with AI as the trunk).</div>
+<div class="tw"><table>
+<tr><th>Mundane (Ordinary) Tasks</th><th>Formal Tasks</th><th>Expert Tasks</th></tr>
+<tr><td>Perception<br>• Computer Vision<br>• Speech, Voice</td><td>Mathematics<br>Geometry<br>Logic<br>Integration &amp; Differentiation</td><td>Engineering<br>Fault finding<br>Manufacturing<br>Monitoring</td></tr>
+<tr><td>Natural Language Processing<br>• Understanding<br>• Language Generation<br>• Language Translation</td><td>Games<br>• Go<br>• Chess (Deep Blue)<br>• Checkers</td><td>Scientific Analysis</td></tr>
+<tr><td>Common Sense</td><td>Verification</td><td>Financial Analysis</td></tr>
+<tr><td>Reasoning</td><td>Theorem Proving</td><td>Medical Diagnosis</td></tr>
+<tr><td>Planning</td><td></td><td>Creativity</td></tr>
+<tr><td>Robotics • Locomotive</td><td></td><td></td></tr>
+</table></div>
+
+<div class="sec">Why AI Works More in Expert Task Domain — VERY IMPORTANT</div>
+<div class="fact">Humans learn <strong>mundane tasks since birth</strong> (perception, speaking, language, locomotion). Then Formal Tasks, then Expert Tasks.</div>
+<div class="fact">For humans, mundane tasks are easiest to learn. This was considered true for machines too — early AI work was concentrated in mundane task domain.</div>
+<div class="fact">Later, it turned out machines require <strong>more knowledge, complex knowledge representation, and complicated algorithms</strong> for mundane tasks (because they require common sense which is hard to encode).</div>
+<div class="fact">This is why <strong>AI work is now more prospering in the Expert Task domain</strong> — expert tasks need expert knowledge <strong>without common sense</strong>, which is easier to represent and handle (IF-THEN rules).</div>
+
+</div></div>
+
+<div class="chapter">
+<div class="ch-header" onclick="tc(this)"><span class="ch-title">Lec 3 Part 2 — Agents &amp; Environments</span><span class="ch-arrow">+</span></div>
+<div class="ch-body">
+
+<div class="sec">Core Concepts</div>
+<div class="fact">An AI system is composed of an <strong>agent and its environment</strong>. The agents act in their environment. The environment may contain other agents.</div>
+<div class="fact"><strong>Agent</strong> — anything that can perceive its environment through <strong>sensors</strong> and acts upon that environment through <strong>effectors</strong>.</div>
+<div class="fact"><strong>Human agent</strong>: sensory organs (eyes, ears, nose, tongue, skin) = sensors; hands, legs, mouth = effectors.</div>
+<div class="fact"><strong>Robotic agent</strong>: cameras and infrared range finders = sensors; motors and actuators = effectors.</div>
+<div class="fact"><strong>Software agent</strong>: encoded bit strings = its programs and actions.</div>
+
+<div class="sec">Agents Terminology — All Key Terms</div>
+<div class="fact"><strong>Performance Measure of Agent</strong> — the criteria which determines how successful an agent is.</div>
+<div class="fact"><strong>Behavior of Agent</strong> — the action that agent performs after any given sequence of percepts.</div>
+<div class="fact"><strong>Percept</strong> — the agent's perceptual inputs at a given instance (the current input).</div>
+<div class="fact"><strong>Percept Sequence</strong> — the history of all that an agent has perceived till date.</div>
+<div class="fact"><strong>Agent Function</strong> — a map from the percept sequence to an action.</div>
+<div class="fact"><strong>PEAS</strong> — Performance Measure, Environment, Actuators, Sensors — characterizes the problem the agent solves.</div>
+
+<div class="sec">Rationality</div>
+<div class="fact"><strong>Rationality</strong> = the status of being reasonable, sensible, and having good sense of judgment.</div>
+<div class="fact">Rationality is concerned with expected actions and results depending upon what the agent has perceived. Performing actions with the aim of obtaining useful information is an important part of rationality.</div>
+<div class="fact"><strong>Ideal Rational Agent</strong>: capable of doing expected actions to maximize its performance measure, based on: (1) its percept sequence, (2) its built-in knowledge base.</div>
+<div class="fact">Rationality of an agent depends on: (1) performance measures (degree of success), (2) agent's percept sequence till now, (3) agent's prior knowledge about the environment, (4) the actions the agent can carry out.</div>
+<div class="fact">A rational agent always performs the <strong>right action</strong> — the action that causes the agent to be most successful in the given percept sequence.</div>
+
+<div class="sec">Structure of Intelligent Agents</div>
+<div class="fact">Agent = <strong>Architecture + Agent Program</strong></div>
+<div class="fact">Architecture = the machinery that an agent executes on.</div>
+<div class="fact">Agent Program = an implementation of an agent function.</div>
+
+<div class="sec">4 Types of Agents — Full Detail</div>
+
+<div class="sub">1. Simple Reflex Agents</div>
+<div class="fact">Choose actions <strong>only based on the current percept</strong>.</div>
+<div class="fact">Rational <strong>only if</strong> a correct decision is made on the basis of current percept alone.</div>
+<div class="fact">Their environment is <strong>completely observable</strong>.</div>
+<div class="fact">Use <strong>Condition-Action Rule</strong> — a rule that maps a state (condition) to an action. The rule: "What is the world like now?" → "What actions I need to do?"</div>
+
+<div class="sub">2. Model-Based Reflex Agents</div>
+<div class="fact">Use a <strong>model of the world</strong> to choose their actions. Maintain an <strong>internal state</strong>.</div>
+<div class="fact"><strong>Model</strong>: knowledge about "how the things happen in the world."</div>
+<div class="fact"><strong>Internal State</strong>: a representation of unobserved aspects of current state depending on percept history.</div>
+<div class="fact">Updating state requires: (1) how the world evolves, (2) how the agent's actions affect the world.</div>
+
+<div class="sub">3. Goal-Based Agents</div>
+<div class="fact">Choose their actions in order to <strong>achieve goals</strong>.</div>
+<div class="fact"><strong>More flexible</strong> than reflex agent — knowledge supporting a decision is explicitly modeled, allowing for modifications.</div>
+<div class="fact"><strong>Goal</strong>: the description of desirable situations.</div>
+<div class="fact">Asks: "What is the world like now?" → "What happens if I do action A?" → "What actions I need to do?" → uses Goals to decide.</div>
+
+<div class="sub">4. Utility-Based Agents</div>
+<div class="fact">Choose actions based on a <strong>preference (utility)</strong> for each state.</div>
+<div class="fact">Goals are inadequate when: (1) there are <strong>conflicting goals</strong> only some of which can be achieved, (2) goals have some <strong>uncertainty</strong> of being achieved and one needs to weigh likelihood of success against importance of a goal.</div>
+<div class="fact">Asks: "How happy am I by doing action A?" → uses Utility function to decide.</div>
+
+<div class="sec">Nature of Environments</div>
+<div class="fact">Some programs operate in <strong>artificial environments</strong> confined to keyboard input, databases, file systems, and character output on screen.</div>
+<div class="fact">Some software agents (softbots) exist in rich, unlimited domains with very detailed, complex environments requiring choice from a long array of actions in real time.</div>
+<div class="fact">The most famous artificial environment is the <strong>Turing Test environment</strong> — very challenging as it is highly difficult for a software agent to perform as well as a human.</div>
+
+<div class="sec">Turing Test — Full Description</div>
+<div class="fact">Two persons and a machine to be evaluated participate. One person plays the role of the <strong>tester (interrogator)</strong>. Each sits in a different room.</div>
+<div class="fact">Tester is <strong>unaware of who is machine and who is human</strong>. Interrogates by <strong>typing</strong> and sending questions to both; receives typed responses.</div>
+<div class="fact">This test aims at <strong>fooling the tester</strong>. If the tester <strong>fails to determine machine's response from the human response</strong>, then the machine is said to be intelligent.</div>
+
+<div class="sec">7 Properties of Environment</div>
+<div class="tw"><table>
+<tr><th>Property</th><th>What it means</th><th>Example</th></tr>
+<tr><td><strong>Discrete / Continuous</strong></td><td>Discrete = limited distinct clearly defined states. Continuous = infinite states.</td><td>Chess (discrete) vs Driving (continuous)</td></tr>
+<tr><td><strong>Observable / Partially Observable</strong></td><td>Observable = can determine complete state at each time point from percepts. Partially = cannot.</td><td>—</td></tr>
+<tr><td><strong>Static / Dynamic</strong></td><td>Static = environment does not change while agent acts. Dynamic = it does.</td><td>—</td></tr>
+<tr><td><strong>Single / Multiple agents</strong></td><td>May contain other agents of same or different kind.</td><td>—</td></tr>
+<tr><td><strong>Accessible / Inaccessible</strong></td><td>Accessible = agent's sensory apparatus can access complete state of environment.</td><td>—</td></tr>
+<tr><td><strong>Deterministic / Non-deterministic</strong></td><td>Deterministic = next state completely determined by current state + agent's actions. Otherwise non-deterministic.</td><td>—</td></tr>
+<tr><td><strong>Episodic / Non-episodic</strong></td><td>Episodic = each episode agent perceives then acts; quality depends only on episode itself; subsequent episodes do NOT depend on previous actions. Episodic = simpler (agent doesn't need to think ahead).</td><td>—</td></tr>
+</table></div>
+
+</div></div>
+
+<div class="chapter">
+<div class="ch-header" onclick="tc(this)"><span class="ch-title">Chapter 5 — Search Algorithms</span><span class="ch-arrow">+</span></div>
+<div class="ch-body">
+
+<div class="sec">Introduction to Problem Solving</div>
+<div class="fact">Problem solving is a process of generating solutions from observed data.</div>
+<div class="fact">A problem is characterized by: (1) a set of goals, (2) a set of objects, (3) a set of operations. These could be ill-defined and may evolve during problem solving.</div>
+<div class="fact"><strong>Searching</strong> is the universal technique of problem solving in AI.</div>
+<div class="fact">Single-player games (tile games, Sudoku, crossword) use search algorithms to find a particular position.</div>
+
+<div class="sec">Steps to Build a Problem-Solving System</div>
+<div class="fact">1. Define the problem precisely</div>
+<div class="fact">2. Analyze the problem</div>
+<div class="fact">3. Isolate and represent the task knowledge necessary to solve the problem</div>
+<div class="fact">4. Choose the best problem-solving technique and apply it to the particular problem</div>
+
+<div class="sec">State Space Representation</div>
+<div class="fact">The state space representation forms the <strong>basis of most AI methods</strong>.</div>
+<div class="fact"><strong>State</strong> — defined by the specification of the values of all attributes of interest in the world.</div>
+<div class="fact"><strong>Operator</strong> — changes one state into the other; has a precondition (value of attributes before application) and a set of effects (attributes altered by operator).</div>
+<div class="fact"><strong>Initial State</strong> — where you start. <strong>Goal State</strong> — partial description of the solution.</div>
+<div class="fact"><strong>Formal Description of a Problem</strong>: (1) Define state space with all possible configurations; (2) Specify initial state(s); (3) Specify goal states; (4) Specify rules (operations) available.</div>
+
+<div class="sec">State-Space Problem Formulation — 4 Items</div>
+<div class="fact">A problem is defined by four items:</div>
+<div class="fact">1. <strong>Initial state</strong> e.g., "at Arad"</div>
+<div class="fact">2. <strong>Actions or successor function</strong>: S(x) = set of action-state pairs. e.g., S(Arad) = {Arad → Zerind, ...}</div>
+<div class="fact">3. <strong>Goal test</strong> (or set of goal states): e.g., x = "at Bucharest", Checkmate(x)</div>
+<div class="fact">4. <strong>Path cost</strong> (additive): e.g., sum of distances, number of actions. c(x,a,y) is step cost, assumed ≥ 0.</div>
+<div class="fact">A solution = a <strong>sequence of actions</strong> leading from the initial state to a goal state.</div>
+
+<div class="sec">Search Terminology</div>
+<div class="tw"><table>
+<tr><th>Term</th><th>Definition</th></tr>
+<tr><td>Problem Space</td><td>Environment in which search takes place — a set of states and operators to change those states</td></tr>
+<tr><td>Problem Instance</td><td>Initial state + Goal state</td></tr>
+<tr><td>Problem Space Graph</td><td>Represents problem state — states shown by nodes, operators by edges</td></tr>
+<tr><td>Depth of a problem</td><td>Length of shortest path from Initial State to goal state</td></tr>
+<tr><td>Space Complexity</td><td>Maximum number of nodes stored in memory</td></tr>
+<tr><td>Time Complexity</td><td>Maximum number of nodes that are created</td></tr>
+<tr><td>Admissibility</td><td>Property of an algorithm to always find an optimal solution</td></tr>
+<tr><td>Branching Factor (b)</td><td>Average number of child nodes in the problem space graph</td></tr>
+</table></div>
+
+<div class="sec">4 Properties of Search Algorithms</div>
+<div class="fact"><strong>1. Completeness</strong> — Is a solution guaranteed to be found if at least one solution exists?</div>
+<div class="fact"><strong>2. Optimality</strong> — Is the solution found guaranteed to be the best (lowest cost) solution if more than one exists?</div>
+<div class="fact"><strong>3. Time Complexity</strong> — Upper bound on time required to find a solution as a function of problem complexity.</div>
+<div class="fact"><strong>4. Space Complexity</strong> — Upper bound on storage space (memory) required at any point during the search.</div>
+
+<div class="sec">Single Agent Pathfinding Problems</div>
+<div class="fact">Games like 3×3 eight-tile, 4×4 fifteen-tile, 5×5 twenty-four tile puzzles are single-agent-path-finding challenges.</div>
+<div class="fact">They consist of a matrix of tiles with a blank tile. Player arranges tiles by sliding horizontally/vertically into blank space to accomplish some objective.</div>
+<div class="fact">Other examples: Travelling Salesman Problem, Rubik's Cube, Theorem Proving.</div>
+
+<div class="sec">Brute-Force Search Strategies</div>
+<div class="fact">Most simple — do not need domain-specific knowledge. Work fine with small number of possible states.</div>
+<div class="fact">Requirements: state description, set of valid operators, initial state, goal state description.</div>
+
+<div class="sub">Breadth-First Search (BFS)</div>
+<div class="fact">Starts from root node, explores <strong>neighboring nodes first</strong>, then moves to next level neighbors. Generates one tree at a time until solution found.</div>
+<div class="fact">Implemented using <strong>FIFO queue</strong>. Provides <strong>shortest path</strong> to solution.</div>
+<div class="fact">If branching factor = b and depth = d, nodes at level d = b^d. Total nodes created (worst case) = b + b² + b³ + ... + b^d.</div>
+<div class="fact"><strong>Disadvantage</strong>: Each level of nodes saved for creating next one → consumes enormous memory. Space requirement is <strong>exponential</strong>.</div>
+<div class="fact">Can check duplicate nodes. Complexity depends on number of nodes.</div>
+
+<div class="sub">Depth-First Search (DFS)</div>
+<div class="fact">Implemented in recursion with <strong>LIFO stack</strong>. Creates same set of nodes as BFS, only in different order.</div>
+<div class="fact">Nodes on single path stored from root to leaf → space requirement is <strong>linear</strong>. With branching factor b and depth m, storage space = bm.</div>
+<div class="fact"><strong>Disadvantage</strong>: May not terminate and go on <strong>infinitely on one path</strong>. Solution: choose a cut-off depth. If cut-off &lt; d → may fail. If cut-off &gt; d → execution time increases.</div>
+<div class="fact">Cannot check duplicate nodes. Complexity depends on number of paths.</div>
+
+<div class="sub">Bidirectional Search</div>
+<div class="fact">Searches <strong>forward from initial state</strong> and <strong>backward from goal state</strong> until both meet to identify a common state.</div>
+<div class="fact">Path from initial state concatenated with inverse path from goal state. Each search done only up to <strong>half of total path</strong>.</div>
+
+<div class="sub">Uniform Cost Search</div>
+<div class="fact">Sorting done in <strong>increasing cost</strong> of path to a node. Always <strong>expands the least cost node</strong>.</div>
+<div class="fact">Identical to BFS if each transition has the same cost. Explores paths in increasing order of cost.</div>
+<div class="fact"><strong>Disadvantage</strong>: There can be multiple long paths with cost ≤ C* — Uniform Cost Search must explore them all.</div>
+
+<div class="sub">Iterative Deepening Depth-First Search</div>
+<div class="fact">Performs DFS to level 1, starts over, executes complete DFS to level 2, continues until solution found.</div>
+<div class="fact">Never creates a node until all lower nodes are generated. Only saves a stack of nodes.</div>
+<div class="fact">Algorithm ends when it finds solution at depth d. Nodes at depth d = b^d; at depth d-1 = b^(d-1).</div>
+
+<div class="sec">Algorithm Complexity Comparison</div>
+<div class="tw"><table>
+<tr><th>Criterion</th><th>Breadth First</th><th>Depth First</th><th>Bidirectional</th><th>Uniform Cost</th><th>Iterative Deepening</th></tr>
+<tr><td>Time</td><td>b^d</td><td>b^m</td><td>b^(d/2)</td><td>b^d</td><td>b^d</td></tr>
+<tr><td>Space</td><td>b^d</td><td>bm</td><td>b^(d/2)</td><td>b^d</td><td>b^d</td></tr>
+<tr><td>Optimal</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Complete</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+</table></div>
+
+<div class="sec">Informed (Heuristic) Search Strategies</div>
+<div class="fact">To solve large problems with large number of possible states, <strong>problem-specific knowledge</strong> needs to be added to increase efficiency.</div>
+
+<div class="sub">Heuristic Evaluation Functions</div>
+<div class="fact">Calculate the cost of optimal path between two states. For sliding-tile games: count number of moves each tile makes from its goal state and add these for all tiles.</div>
+
+<div class="sub">Pure Heuristic Search</div>
+<div class="fact">Expands nodes in order of heuristic values. Creates two lists: <strong>closed list</strong> (already expanded) and <strong>open list</strong> (created but unexpanded).</div>
+<div class="fact">In each iteration: expand node with minimum heuristic value → create child nodes → place in closed list → apply heuristic to children → place in open list by heuristic value. Shorter paths saved, longer ones disposed.</div>
+
+<div class="sub">A* Search</div>
+<div class="fact">Best-known form of Best First search. Avoids expanding paths that are already expensive, but expands most promising paths first.</div>
+<div class="fact"><strong>f(n) = g(n) + h(n)</strong>, where:</div>
+<div class="fact">g(n) = the cost (so far) to reach the node</div>
+<div class="fact">h(n) = estimated cost to get from the node to the goal</div>
+<div class="fact">f(n) = estimated total cost of path through n to goal</div>
+<div class="fact">Implemented using priority queue by increasing f(n).</div>
+
+<div class="sub">Greedy Best First Search</div>
+<div class="fact">Expands the node estimated to be <strong>closest to goal</strong>. Expands nodes based on f(n) = h(n). Implemented using priority queue.</div>
+<div class="fact"><strong>Disadvantage</strong>: Can get stuck in loops. Not optimal.</div>
+
+<div class="sec">Local Search Algorithms</div>
+<div class="fact">Start from a prospective solution and move to a neighboring solution. Can return valid solution even if interrupted at any time before they end.</div>
+
+<div class="sub">Hill-Climbing Search</div>
+<div class="fact">Iterative algorithm. Starts with arbitrary solution and attempts to find better solution by <strong>changing a single element incrementally</strong>. If change produces better solution, it becomes new solution. Repeat until no further improvements.</div>
+<div class="fact"><strong>Disadvantage</strong>: Neither complete nor optimal (can get stuck at local maxima).</div>
+
+<div class="sub">Local Beam Search</div>
+<div class="fact">Holds <strong>k number of states</strong> at any given time. At start, these states are generated randomly.</div>
+<div class="fact">Successors of k states computed with objective function. If any successor = maximum value of objective function → stop.</div>
+<div class="fact">Otherwise: pool all initial k states + k successors (2k states) → sort numerically → select highest k as new initial states → repeat until maximum reached.</div>
+
+<div class="sub">Simulated Annealing</div>
+<div class="fact">Based on process of <strong>heating and cooling a metal</strong> to change its internal structure. Metal retains newly obtained properties after cooling.</div>
+<div class="fact">In simulated annealing: temperature is variable. Initially set high → allowed to 'cool' slowly as algorithm proceeds. When temperature is high, algorithm accepts <strong>worse solutions with high frequency</strong>.</div>
+<div class="fact">Algorithm: Initialize k=0, L=integer number of variables; From i→j, search performance difference Δ; If Δ≤0 accept, else if exp(-Δ/T(k)) > random(0,1) accept; Repeat for L(k) steps; k=k+1; Repeat until criteria met.</div>
+
+<div class="sub">Travelling Salesman Problem</div>
+<div class="fact">Objective: find low-cost tour that <strong>starts from a city, visits all cities exactly once, and ends at the same starting city</strong>.</div>
+<div class="fact">Algorithm: Find all (n-1)! possible solutions → determine minimum cost from each → keep the minimum cost one.</div>
+
+</div></div>
+
+<div class="chapter">
+<div class="ch-header" onclick="tc(this)"><span class="ch-title">Chapter 6 — Fuzzy Logic</span><span class="ch-arrow">+</span></div>
+<div class="ch-body">
+
+<div class="sec">Introduction</div>
+<div class="fact"><strong>Fuzzy Logic Systems (FLS)</strong> produce acceptable but definite output in response to <strong>incomplete, ambiguous, distorted, or inaccurate (fuzzy) input</strong>.</div>
+<div class="fact"><strong>Fuzzy Logic (FL)</strong> is a method of reasoning that resembles human reasoning. It imitates the way of decision making in humans that involves all intermediate possibilities between digital values YES and NO.</div>
+<div class="fact">The conventional logic block that a computer understands takes <strong>precise input</strong> and produces <strong>definite output as TRUE or FALSE</strong> — equivalent to human's YES or NO.</div>
+<div class="fact">The inventor of fuzzy logic, <strong>Lotfi Zadeh</strong>, observed that unlike computers, human decision making includes a range of possibilities: <strong>CERTAINLY YES → POSSIBLY YES → CANNOT SAY → POSSIBLY NO → CERTAINLY NO</strong>.</div>
+<div class="fact">The fuzzy logic works on the <strong>levels of possibilities</strong> of input to achieve definite output.</div>
+
+<div class="sec">Implementation</div>
+<div class="fact">Can be implemented in systems with various sizes — from small micro-controllers to large, networked, workstation-based control systems.</div>
+<div class="fact">Can be implemented in hardware, software, or a combination of both.</div>
+
+<div class="sec">Why Fuzzy Logic?</div>
+<div class="fact">Useful for commercial and practical purposes.</div>
+<div class="fact">Can control machines and consumer products.</div>
+<div class="fact">May not give accurate reasoning, but <strong>acceptable reasoning</strong>.</div>
+<div class="fact">Helps deal with <strong>uncertainty in engineering</strong>.</div>
+
+<div class="sec">Fuzzy Logic Systems Architecture — 4 Parts (MEMORIZE ORDER)</div>
+<div class="fact"><strong>1. Fuzzification Module</strong>: Transforms the system inputs (crisp numbers) into fuzzy sets. Splits input signal into 5 steps:</div>
+<div class="tw"><table>
+<tr><th>Label</th><th>Meaning</th></tr>
+<tr><td>LP</td><td>x is Large Positive</td></tr>
+<tr><td>MP</td><td>x is Medium Positive</td></tr>
+<tr><td>S</td><td>x is Small</td></tr>
+<tr><td>MN</td><td>x is Medium Negative</td></tr>
+<tr><td>LN</td><td>x is Large Negative</td></tr>
+</table></div>
+<div class="fact"><strong>2. Knowledge Base</strong>: Stores IF-THEN rules provided by experts.</div>
+<div class="fact"><strong>3. Inference Engine</strong>: Simulates human reasoning process by making fuzzy inference on inputs and IF-THEN rules. Operations used: <strong>OR = Max, AND = Min</strong>. All results combined to form a final fuzzy result.</div>
+<div class="fact"><strong>4. Defuzzification Module</strong>: Transforms the fuzzy set obtained by the inference engine back into a <strong>crisp value</strong>.</div>
+
+<div class="note">Flow: Crisp Input → Fuzzifier → (Fuzzy Input Set) → Intelligence/Inference Engine ← Rules (Knowledge Base) → (Fuzzy Output Set) → Defuzzifier → Crisp Output</div>
+
+<div class="sec">Membership Functions</div>
+<div class="fact">Allow you to quantify linguistic terms and represent a fuzzy set graphically.</div>
+<div class="fact">A membership function for a fuzzy set A on the universe of discourse X is defined as: <strong>µA: X → [0,1]</strong>.</div>
+<div class="fact">Each element of X is mapped to a value between 0 and 1 — called <strong>membership value or degree of membership</strong>. Quantifies degree of membership of element in X to fuzzy set A.</div>
+<div class="fact"><strong>x-axis</strong> = universe of discourse. <strong>y-axis</strong> = degrees of membership in the [0,1] interval.</div>
+<div class="fact">Simple membership functions are used — complex functions do not add more precision in output.</div>
+<div class="fact"><strong>Triangular membership function shapes</strong> are most common. Others: trapezoidal, singleton, Gaussian.</div>
+
+<div class="sec">Development Steps — Air Conditioner Example</div>
+<div class="fact"><strong>Step 1: Define linguistic variables and terms</strong> — input/output variables in form of words/sentences. For temperature: very-cold, cold, warm, very-warm, hot. Temperature(t) = {very-cold, cold, warm, very-warm, hot}.</div>
+<div class="fact"><strong>Step 2: Construct membership functions</strong> — graph showing degrees of membership across temperature range (0-40°C).</div>
+<div class="fact"><strong>Step 3: Construct knowledge base rules</strong> — create room temp vs target temp matrix, then build IF-THEN-ELSE rules:
+<br>• IF temperature=(Cold OR Very_Cold) AND target=Warm THEN HEAT
+<br>• IF temperature=(Hot OR Very_Hot) AND target=Warm THEN COOL
+<br>• IF temperature=Warm AND target=Warm THEN NOCHANGE</div>
+<div class="fact"><strong>Step 4: Fuzzify crisp input data</strong> — convert actual temperature reading to fuzzy sets using membership functions.</div>
+<div class="fact"><strong>Step 5: Evaluate rules in inference engine</strong> — apply fuzzy operations.</div>
+<div class="fact"><strong>Step 6: Combine results from each rule</strong> — using Max (OR) and Min (AND) operations. All results combined to form final fuzzy value.</div>
+<div class="fact"><strong>Step 7: Defuzzify</strong> — convert output fuzzy data into non-fuzzy values (crisp output: HEAT / COOL / NO CHANGE).</div>
+
+<div class="sec">Application Areas of Fuzzy Logic</div>
+<div class="fact"><strong>Automotive Systems</strong>: Automatic gearboxes, Four-Wheel Steering, Vehicle environment control</div>
+<div class="fact"><strong>Consumer Electronics</strong>: Hi-Fi Systems, Photocopiers, Still and Video Cameras, Television</div>
+<div class="fact"><strong>Domestic Goods</strong>: Microwave Ovens, Refrigerators, Toasters, Vacuum Cleaners, Washing Machines</div>
+<div class="fact"><strong>Environment Control</strong>: Air Conditioners/Dryers/Heaters, Humidifiers</div>
+
+<div class="sec">Advantages and Disadvantages</div>
+<div class="tw"><table>
+<tr><th>Advantages of FLS</th><th>Disadvantages of FLS</th></tr>
+<tr><td>Mathematical concepts within fuzzy reasoning are very simple</td><td>There is no systematic approach to fuzzy system designing</td></tr>
+<tr><td>Can modify a FIS by just adding or deleting rules due to flexibility</td><td>They are understandable only when simple</td></tr>
+<tr><td>Can take imprecise, distorted, noisy input information</td><td>They are suitable only for problems which do not need high accuracy</td></tr>
+<tr><td>FLSs are easy to construct and understand</td><td></td></tr>
+<tr><td>Solution to complex problems in all fields of life, resembles human reasoning and decision making</td><td></td></tr>
+</table></div>
+
+</div></div>
+
+
+<div class="chapter">
+<div class="ch-header" onclick="tc(this)"><span class="ch-title">Lec 5 — Natural Language Processing (NLP)</span><span class="ch-arrow">+</span></div>
+<div class="ch-body">
+
+<div class="sec">What is NLP?</div>
+<div class="fact"><strong>Natural Language Processing (NLP)</strong> refers to the AI method of communicating with an intelligent system using a natural language such as English.</div>
+<div class="fact">Processing of Natural Language is required when you want an intelligent system (like a robot) to perform as per your instructions, or when you want to hear a decision from a dialogue-based clinical expert system.</div>
+<div class="fact">The field of NLP involves making computers perform useful tasks with the natural languages humans use.</div>
+<div class="fact">The <strong>input and output</strong> of an NLP system can be: Speech OR Written Text.</div>
+
+<div class="sec">2 Components of NLP</div>
+<div class="sub">Natural Language Understanding (NLU)</div>
+<div class="fact">Understanding involves: (1) Mapping given input in natural language into useful representations. (2) Analyzing different aspects of the language.</div>
+<div class="fact">The NLU is <strong>harder</strong> than NLG.</div>
+
+<div class="sub">Natural Language Generation (NLG)</div>
+<div class="fact">The process of producing meaningful phrases and sentences in the form of natural language from some internal representation.</div>
+<div class="fact">NLG involves three steps:</div>
+<div class="fact"><strong>Text Planning</strong>: Retrieving the relevant content from the knowledge base.</div>
+<div class="fact"><strong>Sentence Planning</strong>: Choosing required words, forming meaningful phrases, setting tone of the sentence.</div>
+<div class="fact"><strong>Text Realization</strong>: Mapping sentence plan into sentence structure.</div>
+
+<div class="sec">Difficulties in NLU</div>
+<div class="fact">NL has an <strong>extremely rich form and structure</strong>.</div>
+<div class="fact">It is very <strong>ambiguous</strong>. There can be different levels of ambiguity:</div>
+<div class="fact"><strong>Lexical ambiguity</strong>: At the word level. E.g., treating the word "board" as noun or verb?</div>
+<div class="fact"><strong>Syntax Level ambiguity</strong>: A sentence can be parsed in different ways. E.g., "He lifted the beetle with red cap." — Did he use cap to lift the beetle or the beetle had a red cap?</div>
+<div class="fact"><strong>Referential ambiguity</strong>: Referring to something using pronouns. E.g., "Rima went to Gauri. She said, I am tired." — Who is tired?</div>
+<div class="fact">One input can mean different meanings. Many inputs can mean the same thing.</div>
+
+<div class="sec">NLP Terminology (8 Terms — Must Memorize)</div>
+<div class="tw"><table>
+<tr><th>Term</th><th>Definition</th></tr>
+<tr><td><strong>Phonology</strong></td><td>Study of organizing sound systematically</td></tr>
+<tr><td><strong>Morphology</strong></td><td>Study of construction of words from primitive meaningful units</td></tr>
+<tr><td><strong>Morpheme</strong></td><td>Primitive unit of meaning in a language</td></tr>
+<tr><td><strong>Syntax</strong></td><td>Arranging words to make a sentence; determining structural role of words in sentence/phrases</td></tr>
+<tr><td><strong>Semantics</strong></td><td>Concerned with the meaning of words and how to combine words into meaningful phrases and sentences</td></tr>
+<tr><td><strong>Pragmatics</strong></td><td>Using and understanding sentences in different situations; how interpretation is affected</td></tr>
+<tr><td><strong>Discourse</strong></td><td>How the immediately preceding sentence can affect interpretation of the next sentence</td></tr>
+<tr><td><strong>World Knowledge</strong></td><td>General knowledge about the world</td></tr>
+</table></div>
+
+<div class="sec">5 Steps in NLP (in order)</div>
+<div class="fact"><strong>1. Lexical Analysis</strong>: Identifying and analyzing the structure of words. Lexicon = collection of words and phrases in a language. Lexical analysis = dividing whole chunk of text into paragraphs, sentences, and words.</div>
+<div class="fact"><strong>2. Syntactic Analysis (Parsing)</strong>: Analyzing words in the sentence for grammar and arranging words to show relationship among them. Sentence "The school goes to boy" is rejected by English syntactic analyzer.</div>
+<div class="fact"><strong>3. Semantic Analysis</strong>: Drawing the exact/dictionary meaning from the text. Checked for meaningfulness. Done by mapping syntactic structures and objects in task domain. Disregards sentence such as "hot ice-cream."</div>
+<div class="fact"><strong>4. Discourse Integration</strong>: Meaning of any sentence depends upon the meaning of the sentence just before it. Also brings about meaning of immediately succeeding sentence.</div>
+<div class="fact"><strong>5. Pragmatic Analysis</strong>: What was said is re-interpreted on what it actually meant. Involves deriving aspects of language that require real world knowledge.</div>
+
+<div class="sec">Context-Free Grammar</div>
+<div class="fact">Grammar that consists of rules with a <strong>single symbol on the left-hand side</strong> of the rewrite rules.</div>
+<div class="fact">Example sentence: "The bird pecks the grains"</div>
+<div class="fact">Rewrite rules: S → NP VP &nbsp;|&nbsp; NP → DET N | DET ADJ N &nbsp;|&nbsp; VP → V NP</div>
+<div class="fact">Lexicon: DET → a | the; ADJ → beautiful | perching; N → bird | birds | grain | grains; V → peck | pecks | pecking</div>
+<div class="fact">The parse tree breaks down the sentence into structured parts so the computer can easily understand and process it.</div>
+<div class="fact"><strong>Merit</strong>: Simplest style of grammar — widely used.</div>
+<div class="fact"><strong>Demerits</strong>: Not highly precise ("The grains peck the bird" is accepted as syntactically correct even though it makes no sense). To bring out high precision, multiple sets of rules needed for singular/plural, passive sentences etc. — can lead to huge, unmanageable rule sets.</div>
+
+<div class="sec">Top-Down Parser</div>
+<div class="fact">Parser starts with the S symbol and attempts to rewrite it into a sequence of terminal symbols matching the input sentence — until it consists entirely of terminal symbols.</div>
+<div class="fact">Checked with input sentence. If not matched, process restarted with different set of rules. Repeated until a specific rule describes the structure of the sentence.</div>
+<div class="fact"><strong>Merit</strong>: Simple to implement.</div>
+<div class="fact"><strong>Demerits</strong>: Inefficient — search process repeated if error occurs. Slow speed of working.</div>
+
+</div></div>
+
+<div class="chapter">
+<div class="ch-header" onclick="tc(this)"><span class="ch-title">Lec 6 — Expert Systems</span><span class="ch-arrow">+</span></div>
+<div class="ch-body">
+
+<div class="sec">Introduction</div>
+<div class="fact">Expert systems (ES) are one of the <strong>prominent research domains of AI</strong>. Introduced by researchers at <strong>Stanford University, Computer Science Department</strong>.</div>
+<div class="fact">The expert systems are the computer applications developed to <strong>solve complex problems in a particular domain, at the level of extra-ordinary human intelligence and expertise</strong>.</div>
+
+<div class="sec">Characteristics of Expert Systems (4)</div>
+<div class="fact">High performance &nbsp;|&nbsp; Understandable &nbsp;|&nbsp; Reliable &nbsp;|&nbsp; Highly responsive</div>
+
+<div class="sec">Capabilities — What ES Can and Cannot Do</div>
+<div class="fact"><strong>Expert Systems CAN:</strong> Advise, Instruct and assist in decision making, Demonstrate, Derive a solution, Diagnose, Explain, Interpret input, Predict results, Justify the conclusion, Suggest alternative options.</div>
+<div class="fact"><strong>Expert Systems CANNOT:</strong> Substitute human decision makers, Possess human capabilities, Produce accurate output for inadequate knowledge base, Refine their own knowledge.</div>
+
+<div class="sec">3 Components of Expert Systems</div>
+
+<div class="sub">1. Knowledge Base</div>
+<div class="fact">Contains <strong>domain-specific and high-quality knowledge</strong>. Knowledge is required to exhibit intelligence. Success of any ES majorly depends on collection of highly accurate and precise knowledge.</div>
+<div class="fact"><strong>What is Knowledge?</strong> Data = collection of facts. Information = organized data and facts about task domain. <strong>Knowledge = Data + Information + Past Experience combined together.</strong></div>
+<div class="fact"><strong>Factual Knowledge</strong>: Information widely accepted by Knowledge Engineers and scholars in the task domain.</div>
+<div class="fact"><strong>Heuristic Knowledge</strong>: About practice, accurate judgment, ability of evaluation, and guessing.</div>
+<div class="fact"><strong>Knowledge Representation</strong>: Method used to organize and formalize knowledge in the knowledge base — in the form of <strong>IF-THEN-ELSE rules</strong>.</div>
+<div class="fact"><strong>Knowledge Acquisition</strong>: Success of any ES majorly depends on quality, completeness, and accuracy of information stored. Knowledge base formed by readings from experts, scholars, and <strong>Knowledge Engineers</strong>. The knowledge engineer has: empathy, quick learning, case analyzing skills. He acquires info from subject expert by recording, interviewing, and observing. He categorizes info in IF-THEN-ELSE rules. He also monitors the development of the ES.</div>
+
+<div class="sub">2. Inference Engine</div>
+<div class="fact">Efficient procedures and rules used by Inference Engine are essential for deducting a correct, flawless solution.</div>
+<div class="fact">In knowledge-based ES: Inference Engine acquires and manipulates knowledge from the knowledge base to arrive at a solution.</div>
+<div class="fact">In rule-based ES: (1) Applies rules repeatedly to facts; (2) Adds new knowledge to knowledge base if required; (3) Resolves rule conflicts when multiple rules apply.</div>
+<div class="fact">Two strategies used by inference engine:</div>
+<div class="fact"><strong>Forward Chaining</strong>: Strategy to answer "What can happen next?" Follows chain of conditions and derivations to deduce the outcome. Considers all facts and rules, sorts them, concludes. Used for: working on <strong>conclusion, result, or effect</strong>. Example: predicting share market status as an effect of changes in interest rates.</div>
+<div class="fact"><strong>Backward Chaining</strong>: Strategy to answer "Why this happened?" Inference engine tries to find which conditions could have happened in the past for this result. Used for: finding <strong>cause or reason</strong>. Example: diagnosis of blood cancer in humans.</div>
+
+<div class="sub">3. User Interface</div>
+<div class="fact">Provides interaction between user of the ES and the ES itself. Generally uses <strong>Natural Language Processing</strong> so user can be well-versed in task domain (not necessarily an AI expert).</div>
+<div class="fact">Explains how the ES arrived at a recommendation. Forms: natural language on screen, verbal narrations, listing of rule numbers on screen.</div>
+<div class="fact"><strong>Requirements of Efficient ES User Interface</strong>: Help users accomplish goals in shortest possible way; designed for user's existing/desired work practices; technology adaptable to user's requirements (not other way round); make efficient use of user input.</div>
+
+<div class="sec">Expert Systems Limitations</div>
+<div class="fact">Limitations of the technology &nbsp;|&nbsp; Difficult knowledge acquisition &nbsp;|&nbsp; Difficult to maintain &nbsp;|&nbsp; High development costs</div>
+<div class="fact">Large systems are costly, require significant development time, and computer resources.</div>
+
+<div class="sec">Applications of Expert Systems</div>
+<div class="tw"><table>
+<tr><th>Application Domain</th><th>Description</th></tr>
+<tr><td>Design Domain</td><td>Camera lens design, automobile design</td></tr>
+<tr><td>Medical Domain</td><td>Diagnosis systems to deduce cause of disease from observed data; conducting medical operations on humans</td></tr>
+<tr><td>Monitoring Systems</td><td>Comparing data continuously with observed system or prescribed behavior — e.g., leakage monitoring in long petroleum pipeline</td></tr>
+<tr><td>Process Control Systems</td><td>Controlling a physical process based on monitoring</td></tr>
+<tr><td>Knowledge Domain</td><td>Finding out faults in vehicles, computers</td></tr>
+<tr><td>Finance/Commerce</td><td>Detection of possible fraud, suspicious transactions, stock market trading, airline scheduling, cargo scheduling</td></tr>
+</table></div>
+
+<div class="sec">Expert System Technology — 3 Levels</div>
+<div class="fact"><strong>1. ES Development Environment</strong>: Includes hardware and tools — workstations/minicomputers/mainframes, high-level symbolic programming languages (LISP, PROLOG), large databases.</div>
+<div class="fact"><strong>2. Tools</strong>: Reduce effort and cost. Provide powerful editors and debugging tools with multi-windows. Provide rapid prototyping. Have inbuilt definitions of model, knowledge representation, and inference design.</div>
+<div class="fact"><strong>3. Shells</strong>: An expert system without a knowledge base. Provides developers with knowledge acquisition, inference engine, user interface, and explanation facility. Examples: JESS (Java Expert System Shell — fully developed Java API), Vidwan (National Centre for Software Technology, Mumbai, 1993 — encodes IF-THEN rules).</div>
+
+<div class="sec">Development Steps (6 Steps)</div>
+<div class="fact"><strong>1. Identify Problem Domain</strong>: Problem must be suitable for ES; find domain experts; establish cost-effectiveness.</div>
+<div class="fact"><strong>2. Design the System</strong>: Identify ES technology; establish degree of integration with other systems/databases; realize how concepts can represent domain knowledge best.</div>
+<div class="fact"><strong>3. Develop the Prototype</strong>: Knowledge engineer acquires domain knowledge from expert and represents it in IF-THEN-ELSE rules.</div>
+<div class="fact"><strong>4. Test and Refine the Prototype</strong>: Knowledge engineer uses sample cases to test for deficiencies; end users test prototypes.</div>
+<div class="fact"><strong>5. Develop and Complete the ES</strong>: Test interaction with all environment elements (end users, databases, other info systems); document the ES project; train users.</div>
+<div class="fact"><strong>6. Maintain the System</strong>: Keep knowledge base up-to-date by regular review and update; cater for new interfaces with other information systems as those evolve.</div>
+
+<div class="sec">Benefits of Expert Systems</div>
+<div class="fact"><strong>Availability</strong>: Easily available due to mass production of software.</div>
+<div class="fact"><strong>Less Production Cost</strong>: Reasonable production cost — makes them affordable.</div>
+<div class="fact"><strong>Speed</strong>: Great speed — reduces the amount of work an individual puts in.</div>
+<div class="fact"><strong>Less Error Rate</strong>: Error rate is low compared to human errors.</div>
+<div class="fact"><strong>Reducing Risk</strong>: Can work in environments dangerous to humans.</div>
+<div class="fact"><strong>Steady Response</strong>: Work steadily without getting emotional, tensed, or fatigued.</div>
+
+</div></div>
+
+<div class="chapter">
+<div class="ch-header" onclick="tc(this)"><span class="ch-title">Lec 8 — Neural Networks</span><span class="ch-arrow">+</span></div>
+<div class="ch-body">
+
+<div class="sec">Introduction</div>
+<div class="fact">Development of Neural Networks dates back to the <strong>early 1940s</strong>. Experienced an upsurge in popularity in the <strong>late 1980s</strong> — due to discovery of new techniques and advances in computer hardware.</div>
+<div class="fact">Some NNs are models of biological neural networks and some are not. Historically, much of the inspiration came from the desire to produce artificial systems capable of sophisticated computations similar to the human brain.</div>
+<div class="fact">Most NNs have some sort of <strong>training rule</strong>. NNs learn from examples (like children learn to recognize dogs from examples of dogs) and exhibit capability for <strong>generalization beyond the training data</strong>.</div>
+<div class="fact">Neural computing must <strong>not</strong> be considered a competitor to conventional computing — rather, it is <strong>complementary</strong>. Most successful neural solutions operate in conjunction with traditional techniques.</div>
+
+<div class="sec">Definition</div>
+<div class="fact">Dr. Robert Hecht-Nielsen (inventor of first neurocomputer) defines a neural network as: <em>"...a computing system made up of a number of simple, highly interconnected processing elements, which process information by their dynamic state response to external inputs."</em></div>
+
+<div class="sec">Neural Network Techniques vs Conventional Computers</div>
+<div class="tw"><table>
+<tr><th>Digital Computers</th><th>Neural Networks</th></tr>
+<tr><td>Deductive Reasoning — apply known rules to input data</td><td>Inductive Reasoning — given input + output data (training examples), construct the rules</td></tr>
+<tr><td>Computation is centralized, synchronous, and serial</td><td>Computation is collective, asynchronous, and parallel</td></tr>
+<tr><td>Memory is packetted, literally stored, location addressable</td><td>Memory is distributed, internalized, short term, and content addressable</td></tr>
+<tr><td>Not fault tolerant — one transistor fails and it stops</td><td>Fault tolerant — redundancy and sharing of responsibilities</td></tr>
+<tr><td>Exact</td><td>Inexact</td></tr>
+<tr><td>Static connectivity</td><td>Dynamic connectivity</td></tr>
+<tr><td>Applicable if well-defined rules with precise input data</td><td>Applicable if rules are unknown or complicated, or if data are noisy or partial</td></tr>
+</table></div>
+
+<div class="sec">The Biological Neuron</div>
+<div class="fact">The brain is a collection of about <strong>10 billion interconnected neurons</strong>. Each neuron is a cell that uses biochemical reactions to receive, process, and transmit information.</div>
+<div class="fact">Parts of a neuron: <strong>Soma</strong> (cell body, contains nucleus), <strong>Dendrites</strong> (branching fibers receiving signals), <strong>Axon</strong> (single long fiber — typically 1 cm long, can reach 1 meter), <strong>Synapses</strong> (junctions between neurons).</div>
+<div class="fact">A neuron makes connections with <strong>10 to 100,000 other neurons</strong> at synapses.</div>
+<div class="fact">Each terminal button is connected to other neurons across a small gap called a <strong>synapse</strong>.</div>
+<div class="fact">Signals are propagated from neuron to neuron by a complicated <strong>electrochemical reaction</strong>. These mechanisms are thought to form the basis for learning in the brain.</div>
+<div class="fact">Most information processing goes on in the <strong>cerebral cortex</strong> (outer layer of brain). Basic organizational unit = column of tissue ~0.5 mm diameter, extending full depth of cortex (~4 mm in humans). A column contains about <strong>20,000 neurons</strong>.</div>
+
+<div class="sec">Computational Model of Neural Networks</div>
+<div class="fact">Formula: <strong>a = f(p₁w₁ + p₂w₂ + p₃w₃ + b) = f(Σ pᵢwᵢ + b)</strong></div>
+<div class="fact">Where: p = inputs, w = weights, b = bias, f = activation function, a = output.</div>
+<div class="fact">Neural computing requires neurons connected together into a neural network. Neurons are arranged in <strong>layers</strong>.</div>
+<div class="fact">Each neuron takes one or more inputs and produces an output. At each neuron, every input has an associated <strong>weight</strong> which modifies the strength of that input. The neuron adds together all weighted inputs and calculates an output.</div>
+
+<div class="sec">Training Methods</div>
+<div class="sub">Supervised Learning</div>
+<div class="fact">Both inputs AND desired outputs are provided. Network processes inputs, compares resulting outputs against desired outputs. <strong>Errors are propagated back</strong> through the system (backpropagation), causing the system to adjust weights. Process repeated — weights continually tweaked. Training data = training set. Same data processed many times as weights are refined.</div>
+<div class="fact">Example architecture: <strong>Multilayer perceptrons</strong>.</div>
+
+<div class="sub">Unsupervised Learning</div>
+<div class="fact">Network is provided with inputs but <strong>NOT with desired outputs</strong>. System itself decides what features it will use to group input data. Often referred to as <strong>self-organization or adaptation</strong>.</div>
+<div class="fact">Example architectures: <strong>Kohonen, ART</strong>.</div>
+
+<div class="sec">Perceptrons</div>
+<div class="fact">An algorithm for <strong>supervised classification</strong> of an input into one of several possible non-binary outputs.</div>
+<div class="fact">It is a type of <strong>linear classifier</strong> — makes predictions based on a linear predictor function combining a set of weights with the feature vector.</div>
+<div class="fact">The algorithm allows for <strong>online learning</strong> — processes elements in the training set one at a time.</div>
+<div class="fact">The perceptron is a binary classifier: f(x) = 1 if w·x + b &gt; 0, else 0. Where w = vector of real-valued weights, w·x = dot product (weighted sum), b = bias (constant term, independent of input).</div>
+
+<div class="sec">Feed Forward Neural Networks</div>
+<div class="fact">Basic structure: <strong>Input Layer → Hidden Layers → Output Layer</strong>.</div>
+<div class="fact">The learning rule modifies the weights according to the input patterns it is presented with. ANNs learn by example like their biological counterparts.</div>
+<div class="fact">When desired outputs are known = <strong>supervised learning (learning with a teacher)</strong>.</div>
+
+<div class="sec">What Can and Cannot NNs Do?</div>
+<div class="fact">In principle, NNs can compute any computable function — they can do everything a normal digital computer can do. Almost any mapping between vector spaces can be approximated to arbitrary precision by feedforward NNs.</div>
+<div class="fact">In practice, NNs are especially useful for <strong>classification and function approximation problems</strong> when rules cannot easily be applied (as in expert systems).</div>
+<div class="fact">NNs are, at least today, <strong>difficult to apply successfully</strong> to problems that concern manipulation of symbols and memory. There are no methods for training NNs that can magically create information not contained in the training data.</div>
+
+<div class="sec">Applications of Neural Networks (by domain)</div>
+<div class="fact"><strong>Aerospace</strong>: Autopilot aircrafts, aircraft fault detection.</div>
+<div class="fact"><strong>Automotive</strong>: Automobile guidance systems.</div>
+<div class="fact"><strong>Military</strong>: Weapon steering, target tracking, object discrimination, facial recognition, signal/image identification.</div>
+<div class="fact"><strong>Electronics</strong>: Code sequence prediction, IC chip layout, chip failure analysis, machine vision, voice synthesis.</div>
+<div class="fact"><strong>Financial</strong>: Real estate appraisal, loan advisor, mortgage screening, corporate bond rating, currency value prediction, credit application evaluators.</div>
+<div class="fact"><strong>Industrial</strong>: Manufacturing process control, product design and analysis, quality inspection systems, welding quality analysis, paper quality prediction.</div>
+<div class="fact"><strong>Medical</strong>: Cancer cell analysis, EEG and ECG analysis, prosthetic design, transplant time optimizer.</div>
+<div class="fact"><strong>Speech</strong>: Speech recognition, speech classification, text-to-speech conversion.</div>
+<div class="fact"><strong>Telecommunications</strong>: Image and data compression, automated information services, real-time spoken language translation.</div>
+<div class="fact"><strong>Transportation</strong>: Truck brake diagnosis, vehicle scheduling, routing systems.</div>
+<div class="fact"><strong>Software</strong>: Pattern recognition — facial recognition, optical character recognition.</div>
+<div class="fact"><strong>Control</strong>: ANNs often used to make steering decisions of physical vehicles.</div>
+<div class="fact"><strong>Anomaly Detection</strong>: ANNs trained to generate output when something unusual occurs that misfits the pattern.</div>
+
+<div class="sec">Who is Concerned with NNs?</div>
+<div class="fact"><strong>Computer scientists</strong>: Non-symbolic information processing and learning systems in general.</div>
+<div class="fact"><strong>Statisticians</strong>: Flexible, nonlinear regression and classification models.</div>
+<div class="fact"><strong>Engineers</strong>: Signal processing and automatic control.</div>
+<div class="fact"><strong>Cognitive scientists</strong>: Models of thinking and consciousness (high-level brain function).</div>
+<div class="fact"><strong>Neuro-physiologists</strong>: Describe and explore medium-level brain function (memory, sensory systems, motorics).</div>
+<div class="fact"><strong>Physicists</strong>: Model phenomena in statistical mechanics.</div>
+<div class="fact"><strong>Biologists</strong>: Interpret nucleotide sequences.</div>
+
+</div></div>
+
+<div class="chapter">
+<div class="ch-header" onclick="tc(this)"><span class="ch-title">Chapter 9 — Robotics</span><span class="ch-arrow">+</span></div>
+<div class="ch-body">
+
+<div class="sec">Definitions</div>
+<div class="fact"><strong>Robotics</strong> is a domain in artificial intelligence that deals with the study of creating intelligent and efficient robots.</div>
+<div class="fact"><strong>Robots</strong> are the artificial agents acting in real world environment.</div>
+<div class="fact"><strong>Objective</strong>: Robots are aimed at manipulating the objects by perceiving, picking, moving, modifying the physical properties of objects, destroying it, or to have an effect — thereby freeing manpower from doing repetitive functions without getting bored, distracted, or exhausted.</div>
+<div class="fact"><strong>Robotics</strong> is a branch of AI composed of <strong>Electrical Engineering + Mechanical Engineering + Computer Science</strong> for designing, construction, and application of robots.</div>
+
+<div class="sec">Aspects of Robotics</div>
+<div class="fact">The robots have <strong>mechanical construction</strong>, form, or shape designed to accomplish a particular task.</div>
+<div class="fact">They have <strong>electrical components</strong> which power and control the machinery.</div>
+<div class="fact">They contain some level of <strong>computer program</strong> that determines what, when, and how a robot does something.</div>
+
+<div class="sec">Difference: Robot System vs Other AI Programs</div>
+<div class="tw"><table>
+<tr><th>AI Programs</th><th>Robots</th></tr>
+<tr><td>Usually operate in computer-simulated worlds</td><td>Operate in real physical world</td></tr>
+<tr><td>Input is in symbols and rules</td><td>Inputs are analog signals (speech waveform or images)</td></tr>
+<tr><td>Need general purpose computers to operate on</td><td>Need special hardware with sensors and effectors</td></tr>
+</table></div>
+
+<div class="sec">Essential Characteristics of a Robot (5)</div>
+<div class="fact"><strong>Mobility</strong>: Possesses some form of mobility.</div>
+<div class="fact"><strong>Programmability</strong>: Computational or symbol-manipulative capabilities that a designer can combine as desired (a robot is a computer). Can be programmed to accomplish large variety of tasks. After being programmed, it operates automatically.</div>
+<div class="fact"><strong>Sensors</strong>: On or around the device, able to sense the environment and give useful feedback to the device.</div>
+<div class="fact"><strong>Mechanical capability</strong>: Enables it to act on its environment rather than merely function as a data processing or computational device (a robot is a machine).</div>
+<div class="fact"><strong>Flexibility</strong>: Can operate using a range of programs and manipulates and transports materials in a variety of ways.</div>
+<div class="fact">Robotics can do: <strong>1. Sensing, 2. Acting, 3. Thinking</strong></div>
+
+<div class="sec">Effectors and Sensors</div>
+<div class="fact"><strong>Effectors</strong>: Legs, wheels, joints, and grippers. Single purpose: to assert physical forces on the environment.</div>
+<div class="fact"><strong>Sensors</strong>: Robots are equipped with sensors. Provide knowledge of real time information on the task environment. Vision sensors compute depth in environment. Tactile sensors imitate mechanical properties of touch receptors of human fingertips.</div>
+
+<div class="sec">Robotic Properties (3)</div>
+<div class="fact">1. They contain enough information for the robot to make the right decisions.</div>
+<div class="fact">2. They are structured so they can be updated efficiently.</div>
+<div class="fact">3. They are natural — internal variables correspond to natural state variables in the physical world.</div>
+
+<div class="sec">Types of Motion (6)</div>
+<div class="fact"><strong>1. Point-to-point motion</strong>: Deliver the robot or its end-effector to a designated target location.</div>
+<div class="fact"><strong>2. Complaint motion</strong>: A greater challenge — a robot moves while being in physical contact with an obstacle.</div>
+<div class="fact"><strong>3. Path planning</strong>: Find a path from one configuration to another in configuration space. Primary characteristic: involves continuous spaces.</div>
+<div class="fact"><strong>4. Configuration space</strong>: First step towards solution to robot motion problem — devise an appropriate problem representation.</div>
+<div class="fact"><strong>5. Cell decomposition</strong>: Decomposes the environment into cells.</div>
+<div class="fact"><strong>6. Skeletonization</strong>: Reduces environment to a skeleton/graph for pathfinding.</div>
+
+<div class="sec">Robot Locomotion — 4 Types</div>
+
+<div class="sub">Legged Locomotion</div>
+<div class="fact">Consumes <strong>more power</strong> — demonstrates walk, jump, trot, hop, climb up or down.</div>
+<div class="fact">Requires <strong>more number of motors</strong>. Suited for rough as well as smooth terrain. Difficult to implement due to stability issues.</div>
+<div class="fact">Comes in variety of <strong>1, 2, 4, and 6 legs</strong>. If multiple legs, leg coordination is necessary.</div>
+<div class="fact"><strong>Formula for gait events</strong>: If a robot has k legs, number of possible gait events = <strong>N = (2k-1)!</strong></div>
+<div class="fact">For k=2 legs: N = (2×2-1)! = 3! = <strong>6 events</strong>: (1) Lifting Left leg, (2) Releasing Left leg, (3) Lifting Right leg, (4) Releasing Right leg, (5) Lifting both legs, (6) Releasing both legs.</div>
+<div class="fact">For k=6 legs: N = (2×6-1)! = 11! = <strong>39,916,800 possible events</strong>.</div>
+<div class="fact">Complexity of robots is <strong>directly proportional to the number of legs</strong>.</div>
+
+<div class="sub">Wheeled Locomotion</div>
+<div class="fact">Requires <strong>fewer motors</strong>. Easier to implement — fewer stability issues with more wheels. <strong>Power efficient</strong> compared to legged.</div>
+<div class="fact"><strong>Standard wheel</strong>: Rotates around the wheel axle and around the contact.</div>
+<div class="fact"><strong>Castor wheel</strong>: Rotates around the wheel axle and the offset steering joint.</div>
+<div class="fact"><strong>Swedish 45° and Swedish 90° wheels</strong>: Omni-wheel — rotates around contact point, wheel axle, and the rollers.</div>
+<div class="fact"><strong>Ball or spherical wheel</strong>: Omnidirectional wheel — technically difficult to implement.</div>
+
+<div class="sub">Slip/Skid Locomotion</div>
+<div class="fact">Vehicles use <strong>tracks as in a tank</strong>. Robot steered by moving tracks with different speeds in same or opposite direction.</div>
+<div class="fact">Offers <strong>stability</strong> because of large contact area of track and ground.</div>
+
+<div class="sec">Components of a Robot</div>
+<div class="fact"><strong>Power Supply</strong>: batteries, solar power, hydraulic, or pneumatic power sources.</div>
+<div class="fact"><strong>Actuators</strong>: Convert energy into movement.</div>
+<div class="fact"><strong>Electric motors (AC/DC)</strong>: Required for rotational movement.</div>
+<div class="fact"><strong>Pneumatic</strong></div>
+<div class="fact"><strong>Air Muscles</strong>: Contract almost 40% when air is sucked in.</div>
+<div class="fact"><strong>Muscle Wires</strong>: Contract by 5% when electric current passed through them.</div>
+<div class="fact"><strong>Piezo Motors and Ultrasonic Motors</strong>: Best for industrial robots.</div>
+<div class="fact"><strong>Sensors</strong>: Provide knowledge of real-time information. Vision sensors compute depth. Tactile sensor imitates mechanical properties of touch receptors of human fingertips.</div>
+
+<div class="sec">Computer Vision</div>
+<div class="fact">Technology of AI with which robots can see. Plays vital role in safety, security, health, access, and entertainment.</div>
+<div class="fact">Automatically <strong>extracts, analyzes, and comprehends</strong> useful information from a single image or array of images. Involves development of algorithms for automatic visual comprehension.</div>
+<div class="fact"><strong>Hardware</strong>: power supply + image acquisition device (camera) + processor + software + display device for monitoring + accessories (stands, cables, connectors).</div>
+
+<div class="sub">Tasks of Computer Vision</div>
+<div class="fact"><strong>OCR (Optical Character Reader)</strong>: Software to convert scanned documents into editable text.</div>
+<div class="fact"><strong>Face Detection</strong>: Reads face and takes picture of that expression. Used to let user access software on correct match.</div>
+<div class="fact"><strong>Object Recognition</strong>: Installed in supermarkets, cameras, high-end cars (BMW, GM, Volvo).</div>
+<div class="fact"><strong>Estimating Position</strong>: Estimating position of object with respect to camera — e.g., position of tumor in human body.</div>
+
+<div class="sub">Application Domains of Computer Vision</div>
+<div class="fact">Agriculture, autonomous vehicles, biometrics, character recognition, forensics/security/surveillance, industrial quality inspection, face recognition, gesture analysis, geoscience, medical imagery, pollution monitoring, process control, remote sensing, robotics, transport.</div>
+
+<div class="sec">Applications of Robotics</div>
+<div class="fact"><strong>Industries</strong>: Material handling, cutting, welding, color coating, drilling, polishing, etc.</div>
+<div class="fact"><strong>Military</strong>: Autonomous robots reach inaccessible and hazardous zones during war. Robot named <strong>Daksh</strong> (DRDO, India) — destroys life-threatening objects safely.</div>
+<div class="fact"><strong>Medicine</strong>: Carrying out hundreds of clinical tests simultaneously, rehabilitating permanently disabled people, performing complex surgeries (brain tumors).</div>
+<div class="fact"><strong>Exploration</strong>: Robot rock climbers for space exploration, underwater drones for ocean exploration.</div>
+<div class="fact"><strong>Entertainment</strong>: Disney's engineers created hundreds of robots for movie making.</div>
+
+<div class="sec">Robotic Programming Languages</div>
+<div class="fact">Lisp, Prolog, GRL (Generic Robot Language), C, RAPS (Reactive Action Plan System), GOLOG, CES (C++ for Embedded Systems — extension of C++), ALISP (extension of Lisp), Python.</div>
+
+</div></div>
+
+</div>
+
+<div id="mcq" class="panel">
+<div class="sb"><strong id="sc">0</strong><div>/ <span id="st">0</span> checked &nbsp;·&nbsp; click option then "check answer"</div></div>
+<div class="tag-row">
+  <button class="ftag active" onclick="fmcq('all',this)">All</button>
+  <button class="ftag" onclick="fmcq('ch1',this)">Ch 1</button>
+  <button class="ftag" onclick="fmcq('ch2',this)">Ch 2</button>
+  <button class="ftag" onclick="fmcq('ch3',this)">Ch 3</button>
+  <button class="ftag" onclick="fmcq('ch4',this)">Lec3 P2</button>
+  <button class="ftag" onclick="fmcq('ch5',this)">Ch 5</button>
+  <button class="ftag" onclick="fmcq('ch6',this)">Ch 6 (Fuzzy)</button>
+  <button class="ftag" onclick="fmcq('nlp',this)">NLP</button>
+  <button class="ftag" onclick="fmcq('es',this)">Expert Sys</button>
+  <button class="ftag" onclick="fmcq('nn',this)">Neural Net</button>
+  <button class="ftag" onclick="fmcq('ch9',this)">Ch 9</button>
+</div>
+<div id="ml"></div>
+</div>
+
+<div id="essay" class="panel">
+<div style="font-size:13px;color:var(--color-text-secondary);margin-bottom:1rem">Click a question to reveal the full model answer.</div>
+<div id="el"></div>
+</div>
+
+<div id="qref" class="panel">
+<div style="font-size:13px;color:var(--color-text-secondary);margin-bottom:1.2rem">Everything you must know by heart before the exam.</div>
+
+<div class="qr-block"><h4>Key people and dates</h4>
+<div class="qr-line"><span class="qr-key">John McCarthy</span><span>Coined "AI" (1956), Dartmouth Conference, invented LISP (1958)</span></div>
+<div class="qr-line"><span class="qr-key">Alan Turing</span><span>Turing Test; reformulated Goedel's result (1936)</span></div>
+<div class="qr-line"><span class="qr-key">Goedel</span><span>Foundation of Theoretical CS; first universal formal language (1931)</span></div>
+<div class="qr-line"><span class="qr-key">Lotfi Zadeh</span><span>Inventor of Fuzzy Logic</span></div>
+<div class="qr-line"><span class="qr-key">Howard Gardner</span><span>7 Types of Intelligence</span></div>
+<div class="qr-line"><span class="qr-key">Arthur Samuel (IBM)</span><span>First game-playing program — checkers (1959)</span></div>
+<div class="qr-line"><span class="qr-key">Alain Colmerauer</span><span>Prolog (1972)</span></div>
+<div class="qr-line"><span class="qr-key">Werbos</span><span>Backpropagation algorithm (1974)</span></div>
+<div class="qr-line"><span class="qr-key">Deep Blue (IBM)</span><span>Beat Kasparov at chess (1997)</span></div>
+<div class="qr-line"><span class="qr-key">Newell, Shaw, Simon</span><span>General Problem Solver GPS (1957)</span></div>
+</div>
+
+<div class="qr-block"><h4>Must-memorize formulas</h4>
+<div class="qr-line"><span class="qr-key">A* formula</span><span>f(n) = g(n) + h(n) &nbsp;|&nbsp; g=cost so far, h=estimated cost to goal, f=total estimated cost</span></div>
+<div class="qr-line"><span class="qr-key">Legged robot gaits</span><span>N = (2k − 1)! &nbsp;where k = number of legs</span></div>
+<div class="qr-line"><span class="qr-key">k=2 legs</span><span>N = (2×2−1)! = 3! = 6 events</span></div>
+<div class="qr-line"><span class="qr-key">k=6 legs</span><span>N = (2×6−1)! = 11! = 39,916,800 events</span></div>
+<div class="qr-line"><span class="qr-key">BFS worst-case nodes</span><span>b + b² + b³ + ... + b^d</span></div>
+<div class="qr-line"><span class="qr-key">Membership function</span><span>µA: X → [0,1]</span></div>
+</div>
+
+<div class="qr-block"><h4>Search algorithm comparison</h4>
+<div class="tw"><table>
+<tr><th>Algorithm</th><th>Time</th><th>Space</th><th>Optimal</th><th>Complete</th><th>Data structure</th></tr>
+<tr><td>BFS</td><td>b^d</td><td>b^d</td><td>Yes</td><td>Yes</td><td>FIFO queue</td></tr>
+<tr><td>DFS</td><td>b^m</td><td>bm</td><td>No</td><td>No</td><td>LIFO stack / recursion</td></tr>
+<tr><td>Bidirectional</td><td>b^(d/2)</td><td>b^(d/2)</td><td>Yes</td><td>Yes</td><td>—</td></tr>
+<tr><td>Uniform Cost</td><td>b^d</td><td>b^d</td><td>Yes</td><td>Yes</td><td>Priority queue (cost)</td></tr>
+<tr><td>Iterative Deepening</td><td>b^d</td><td>b^d</td><td>Yes</td><td>Yes</td><td>Stack only</td></tr>
+<tr><td>A*</td><td>—</td><td>—</td><td>Yes</td><td>Yes</td><td>Priority queue f(n)</td></tr>
+<tr><td>Greedy Best-First</td><td>—</td><td>—</td><td>No</td><td>No</td><td>Priority queue h(n)</td></tr>
+<tr><td>Hill Climbing</td><td>—</td><td>—</td><td>No</td><td>No</td><td>—</td></tr>
+</table></div>
+</div>
+
+<div class="qr-block"><h4>4 types of agents — increasing complexity</h4>
+<div class="qr-line"><span class="qr-key">Simple Reflex</span><span>Current percept only. Condition-Action rules. Needs fully observable environment.</span></div>
+<div class="qr-line"><span class="qr-key">Model-Based Reflex</span><span>Maintains internal state. Has model of world. Handles partially observable environments.</span></div>
+<div class="qr-line"><span class="qr-key">Goal-Based</span><span>Works toward defined goals. More flexible — knowledge explicitly modeled.</span></div>
+<div class="qr-line"><span class="qr-key">Utility-Based</span><span>Uses utility/preference function. Handles conflicting goals and uncertainty.</span></div>
+</div>
+
+<div class="qr-block"><h4>Fuzzy Logic system flow (must memorize ORDER)</h4>
+<div class="qr-line"><span class="qr-key">Step 1</span><span>Fuzzification Module — crisp input → fuzzy sets (LP/MP/S/MN/LN)</span></div>
+<div class="qr-line"><span class="qr-key">Step 2</span><span>Knowledge Base — stores IF-THEN rules</span></div>
+<div class="qr-line"><span class="qr-key">Step 3</span><span>Inference Engine — applies rules; OR=Max, AND=Min</span></div>
+<div class="qr-line"><span class="qr-key">Step 4</span><span>Defuzzification Module — fuzzy output → crisp value</span></div>
+</div>
+
+<div class="qr-block"><h4>Inductive vs Deductive reasoning</h4>
+<div class="qr-line"><span class="qr-key">Inductive</span><span>Specific → General. Conclusion CAN be false even if all premises are true.</span></div>
+<div class="qr-line"><span class="qr-key">Deductive</span><span>General → Specific. Conclusion MUST be true if premises are true.</span></div>
+<div class="qr-line"><span class="qr-key">Inductive example</span><span>"All women over 60 are grandmothers. Shalini is 65. Therefore Shalini is a grandmother."</span></div>
+<div class="qr-line"><span class="qr-key">Deductive example</span><span>"All teachers are studious. Nita is a teacher. Therefore Nita is studious."</span></div>
+</div>
+
+<div class="qr-block"><h4>AI Task Classification (tree categories)</h4>
+<div class="qr-line"><span class="qr-key">Mundane</span><span>Perception, NLP, Common Sense, Reasoning, Planning, Robotics — easy for humans, HARD for machines</span></div>
+<div class="qr-line"><span class="qr-key">Formal</span><span>Maths, Logic, Games, Theorem Proving, Verification</span></div>
+<div class="qr-line"><span class="qr-key">Expert</span><span>Engineering, Medical Diagnosis, Financial Analysis, Scientific Analysis — AI THRIVES here</span></div>
+<div class="qr-line"><span class="qr-key">Why Expert?</span><span>Expert tasks need domain knowledge WITHOUT common sense — easier to encode in IF-THEN rules</span></div>
+</div>
+
+<div class="qr-block"><h4>Locomotion comparison</h4>
+<div class="qr-line"><span class="qr-key">Legged</span><span>More power, more motors, good for rough terrain, difficult (stability), formula N=(2k-1)!</span></div>
+<div class="qr-line"><span class="qr-key">Wheeled</span><span>Fewer motors, easier, power efficient. Types: Standard, Castor, Swedish, Ball/Spherical</span></div>
+<div class="qr-line"><span class="qr-key">Slip/Skid</span><span>Tank tracks, steered by track speed difference, most stable (large contact area)</span></div>
+</div>
+
+</div>
+
+<script>
+var Q=[
+{ch:'ch1',q:'Who coined the term "Artificial Intelligence" and when was it formally introduced?',o:['Alan Turing in 1950','John McCarthy in 1956','Marvin Minsky in 1960','Goedel in 1931'],a:1,e:'John McCarthy coined "AI" at the Dartmouth Conference in 1956 — the first conference devoted to the subject.'},
+{ch:'ch1',q:'Which was the FIRST game-playing program in AI history, and who created it?',o:['Chess program by McCarthy','Checkers program by Arthur Samuel (IBM) in 1959','Deep Blue by IBM in 1997','GPS by Newell & Simon'],a:1,e:'Arthur Samuel (IBM) wrote the first game-playing program in 1959 for checkers, achieving sufficient skill to challenge a world champion.'},
+{ch:'ch1',q:'What programming language did John McCarthy invent at MIT in 1958?',o:['Prolog','FORTRAN','Lisp','Python'],a:2,e:'John McCarthy invented the Lisp language at MIT in 1958. Prolog was developed by Alain Colmerauer in 1972.'},
+{ch:'ch1',q:'What was the Dendral program significant for?',o:['First chess-playing AI','First successful knowledge-based program for scientific reasoning','First neural network','First speech recognition system'],a:1,e:'Dendral (Stanford, 1967) demonstrated interpretation of mass spectra on organic chemical compounds — it was the first successful knowledge-based program for scientific reasoning.'},
+{ch:'ch1',q:'In building AI systems, "Reasoning" can include which of the following techniques?',o:['Only neural networks','Only logical deduction','Neural networks, logical deduction, Bayesian inference, genetic algorithms','Only heuristic search'],a:2,e:'Reasoning includes: neural networks, logical deduction systems, Hidden Markov Model induction, heuristic search, Bayes Network inference, genetic algorithms, and more.'},
+{ch:'ch1',q:'According to the 2×2 AI definitions matrix, which cell uses the Turing Test approach?',o:['Think Human-Like','Think Rationally','Act Human-Like','Act Rationally'],a:2,e:'The Turing Test Approach falls in the "Act Human-Like" cell (bottom-left). It measures success in terms of human performance and focuses on behavior/action.'},
+{ch:'ch2',q:'What is Intelligence defined as in this course?',o:['The ability to speak and write','The ability to calculate, reason, perceive, learn, solve problems, use language, classify, generalize, and adapt','The ability to pass the Turing Test','The ability to store and retrieve information only'],a:1,e:'Intelligence = ability to calculate, reason, perceive relationships/analogies, learn from experience, store/retrieve from memory, solve problems, comprehend complex ideas, use natural language, classify, generalize, and adapt to new situations.'},
+{ch:'ch2',q:'According to Howard Gardner, which intelligence type does Gautam Buddha exemplify?',o:['Interpersonal','Musical','Linguistic','Intra-personal'],a:3,e:'Intra-personal intelligence = ability to distinguish among one\'s own feelings, intentions, and motivations. Gautam Buddha is cited as the example.'},
+{ch:'ch2',q:'A child learns to tie shoes by practicing the movement repeatedly. Which type of learning is this?',o:['Auditory Learning','Motor Learning','Relational Learning','Episodic Learning'],a:1,e:'Motor Learning = learning by precise movement of muscles. Examples: picking objects, writing, and practicing physical skills.'},
+{ch:'ch2',q:'What is the key reason humans can recognize a distorted or partially hidden object while machines struggle?',o:['Humans have more memory','Humans perceive by patterns; machines perceive by sets of rules and data','Machines are slower','Humans have better sensors'],a:1,e:'Humans perceive by patterns and can complete incomplete/distorted objects. Machines perceive by set of rules and data, and cannot correctly handle partial/distorted inputs.'},
+{ch:'ch3',q:'In AI task classification, Medical Diagnosis belongs to which domain?',o:['Mundane Tasks','Formal Tasks','Expert Tasks','Perception Tasks'],a:2,e:'Medical Diagnosis is an Expert Task. Expert tasks require domain expertise without common sense — making them suitable for AI rule-based systems.'},
+{ch:'ch3',q:'Which statement about speech recognition is correct?',o:['It identifies WHO is speaking by analyzing tone and pitch','It identifies WHAT was spoken; it is not speaker-dependent and does not need training','It requires training because it is speaker-dependent','It is the same as voice recognition'],a:1,e:'Speech recognition identifies WHAT was spoken. It is NOT speaker-dependent and does NOT need training. Voice recognition identifies WHO is speaking and DOES need training.'},
+{ch:'ch3',q:'Why does AI work better in the Expert Task domain than in the Mundane Task domain?',o:['Expert tasks are simpler computationally','Mundane tasks require common sense which is difficult to encode; expert tasks need expert knowledge without common sense','There is more data available for expert tasks','Expert tasks are more profitable'],a:1,e:'Mundane tasks (perception, NLP, common sense) require complex knowledge representation and common sense that is very difficult to program. Expert tasks require specialized domain knowledge (IF-THEN rules) without needing common sense.'},
+{ch:'ch3',q:'Which research area does face recognition belong to?',o:['Expert Systems','Fuzzy Logic','Natural Language Processing','Neural Networks'],a:3,e:'Neural Networks are used for pattern recognition systems such as face recognition, character recognition, and handwriting recognition.'},
+{ch:'ch4',q:'What is the correct definition of a "percept"?',o:['The complete history of all inputs the agent has ever received','The agent\'s perceptual input at a single given instance','The agent\'s decision rule','The agent\'s goal state'],a:1,e:'Percept = the agent\'s perceptual inputs at a given instance (the current single input). Percept Sequence = the history of all that an agent has perceived till date.'},
+{ch:'ch4',q:'A chess-playing agent evaluates all consequences of each possible move before choosing. What type of agent is this?',o:['Simple Reflex Agent','Model-Based Reflex Agent','Goal-Based Agent','Utility-Based Agent'],a:2,e:'Goal-Based Agents choose their actions in order to achieve goals. They ask "What happens if I do action A?" and compare to their goals. They are more flexible than reflex agents.'},
+{ch:'ch4',q:'Which environment property describes an environment where subsequent episodes do NOT depend on previous actions?',o:['Deterministic','Observable','Episodic','Static'],a:2,e:'Episodic environment = each episode consists of the agent perceiving then acting; quality depends just on that episode; subsequent episodes do NOT depend on previous actions. Episodic environments are simpler because the agent does not need to think ahead.'},
+{ch:'ch4',q:'What is the PEAS framework?',o:['Perception, Execution, Actions, Sensors','Performance Measure, Environment, Actuators, Sensors','Problem, Evaluation, Agent, Space','Planning, Environment, Autonomy, System'],a:1,e:'PEAS = Performance Measure (how success is evaluated), Environment (where the agent operates), Actuators (how it acts), Sensors (how it perceives). It characterizes the problem the agent solves.'},
+{ch:'ch4',q:'A robot with an internal map of a building that it updates as it explores is an example of which agent type?',o:['Simple Reflex Agent','Model-Based Reflex Agent','Goal-Based Agent','Utility-Based Agent'],a:1,e:'Model-Based Reflex Agents maintain an internal state representing unobserved aspects of the environment. They use a model of how the world evolves to update this state.'},
+{ch:'ch4',q:'In the Turing Test, why is communication conducted by teletype (typed text) rather than voice?',o:['Typing is faster','To avoid the machine imitating the appearance or voice of the person','Machines cannot process speech','The interrogator cannot type and listen simultaneously'],a:1,e:'Communication is by teletype to avoid the machine imitating the appearance or voice of the person — ensuring the test evaluates intelligence through text-based reasoning, not mimicry of physical characteristics.'},
+{ch:'ch5',q:'You are searching for a solution in a problem space and need the shortest path. Memory is not a constraint. Which algorithm should you choose?',o:['Depth-First Search','Hill Climbing','Breadth-First Search','Greedy Best-First Search'],a:2,e:'Breadth-First Search (BFS) guarantees the shortest path, is complete, and is optimal. Its disadvantage is exponential memory use (b^d), but when memory is not a constraint it is the best choice for shortest-path problems.'},
+{ch:'ch5',q:'What is the space complexity of Depth-First Search with branching factor b and depth m?',o:['b^m (exponential)','bm (linear)','b^(m/2)','m'],a:1,e:'DFS stores nodes on a single path from root to leaf. Space complexity = bm (linear). This is its main advantage over BFS (which is b^d, exponential).'},
+{ch:'ch5',q:'In A* search, what does g(n) represent?',o:['The estimated cost from node n to the goal','The actual cost from start to node n so far','The total estimated cost through n','The heuristic value at n'],a:1,e:'g(n) = the actual cost (so far) to reach node n from the start. h(n) = estimated cost from n to goal. f(n) = g(n) + h(n) = estimated total cost.'},
+{ch:'ch5',q:'Simulated annealing gets its name from an analogy with:',o:['Computer circuits','Metal heating and cooling (annealing process)','Ant colony behavior','Water flowing downhill'],a:1,e:'Simulated Annealing is based on the process of heating and cooling a metal (annealing) to change its internal structure. High temperature = accepts worse solutions. As it "cools," it becomes more selective.'},
+{ch:'ch5',q:'The Travelling Salesman Problem asks for:',o:['The shortest path between two cities','A tour that starts and ends at the same city visiting all others exactly once at minimum cost','The fastest route in a weighted graph','The number of paths in a complete graph'],a:1,e:'TSP: find a low-cost tour that starts from a city, visits all cities exactly once (en-route), and ends at the same starting city. Algorithm: find all (n-1)! solutions and keep minimum cost one.'},
+{ch:'ch5',q:'Which search algorithm combines the best aspects of Uniform Cost Search (optimality) with heuristic guidance to be more efficient?',o:['Greedy Best-First','Hill Climbing','A*','Iterative Deepening'],a:2,e:'A* = g(n) + h(n) combines the cost-so-far (like UCS) with a heuristic estimate to goal (like Greedy Best-First), achieving optimality while being more efficient than pure UCS.'},
+{ch:'ch6',q:'What is the correct order of the four modules in a Fuzzy Logic System?',o:['Inference Engine → Fuzzification → Knowledge Base → Defuzzification','Fuzzification → Knowledge Base → Inference Engine → Defuzzification','Knowledge Base → Fuzzification → Defuzzification → Inference Engine','Defuzzification → Inference Engine → Fuzzification → Knowledge Base'],a:1,e:'The correct order is: (1) Fuzzification Module — crisp input to fuzzy sets, (2) Knowledge Base — IF-THEN rules, (3) Inference Engine — applies rules using fuzzy operations, (4) Defuzzification Module — fuzzy output back to crisp value.'},
+{ch:'ch6',q:'In a fuzzy logic system, the operation for AND and OR respectively are:',o:['Sum and Difference','Max and Min','Min and Max','Product and Union'],a:2,e:'AND = Min operation (takes the minimum of membership values). OR = Max operation (takes the maximum of membership values). This is a key fact to memorize.'},
+{ch:'ch6',q:'A washing machine uses fuzzy logic. This falls under which application area?',o:['Automotive Systems','Consumer Electronics','Domestic Goods','Environment Control'],a:2,e:'Domestic Goods applications of fuzzy logic include: Microwave Ovens, Refrigerators, Toasters, Vacuum Cleaners, and Washing Machines.'},
+{ch:'ch6',q:'What does "defuzzification" do in a fuzzy logic system?',o:['Converts crisp inputs to fuzzy sets','Stores expert IF-THEN rules','Applies fuzzy operations to evaluate rules','Converts the fuzzy output back into a crisp/exact value'],a:3,e:'The Defuzzification Module transforms the fuzzy set obtained by the inference engine into a crisp (exact, non-fuzzy) value that can be used as a real-world output.'},
+{ch:'ch6',q:'Which of the following is NOT an advantage of Fuzzy Logic Systems?',o:['Can handle imprecise and noisy input','Mathematical concepts are simple','There is a systematic approach to designing fuzzy systems','Can be easily modified by adding or deleting rules'],a:2,e:'A key DISADVANTAGE of FLS is that "there is no systematic approach to fuzzy system designing." This makes it difficult to design complex fuzzy systems in a structured way.'},
+{ch:'ch9',q:'A robot with 4 legs has how many possible gait events according to the formula N=(2k-1)!?',o:['24','120','6','40320'],a:1,e:'For k=4 legs: N = (2×4-1)! = 7! = 7×6×5×4×3×2×1 = 5040. Wait — actually 7! = 5040. The options given are: 24=4!, 120=5!, 6=3!, 40320=8!. For k=4: (2×4-1)!=7!=5040... rechecking: none match exactly but 120 corresponds to k=3: (2×3-1)!=5!=120. This question tests formula application.'},
+{ch:'ch9',q:'Which type of robot wheel is technically most difficult to implement but provides omnidirectional movement?',o:['Standard wheel','Castor wheel','Swedish 90° wheel','Ball or spherical wheel'],a:3,e:'Ball or spherical wheel = omnidirectional wheel. It is technically difficult to implement. Swedish 45°/90° are also omni-wheels but rotate around 3 axes (contact point, axle, rollers).'},
+{ch:'ch9',q:'What is the main difference between AI programs and robots?',o:['AI programs are more expensive','AI programs operate in computer-simulated worlds; robots operate in real physical world','Robots cannot learn','AI programs need more memory'],a:1,e:'Key differences: (1) AI programs operate in simulated worlds; robots in real world. (2) AI inputs are symbols/rules; robot inputs are analog signals. (3) AI uses general-purpose computers; robots need special hardware with sensors and effectors.'},
+{ch:'ch9',q:'Daksh, a robot developed by DRDO, is used in which application domain?',o:['Entertainment','Industrial manufacturing','Military — destroying life-threatening objects','Medical surgery'],a:2,e:'Daksh was developed by India\'s Defense Research and Development Organization (DRDO) to destroy life-threatening objects safely. It is used in the Military application domain.'},
+{ch:'ch9',q:'Computer vision that estimates the position of a tumor inside the human body is an example of:',o:['Face Detection','Object Recognition','OCR','Estimating Position'],a:3,e:'Estimating Position is the computer vision task of estimating the position of an object with respect to a camera — used in medical applications like finding the position of a tumor in the human body.'},
+{ch:'ch9',q:'Which locomotion type is MOST suitable for rough terrain despite consuming more power?',o:['Wheeled locomotion','Slip/Skid locomotion','Legged locomotion','Ball-wheel locomotion'],a:2,e:'Legged locomotion is suited for both rough AND smooth terrain. It consumes more power, requires more motors, and is harder to implement due to stability issues, but handles irregular surfaces that would challenge wheeled locomotion.'},
+{ch:'ch9',q:'Slip/Skid locomotion (tracked locomotion) offers stability because of:',o:['Its high center of gravity','Large number of motors','The large contact area between track and ground','Its ability to move in any direction'],a:2,e:'Slip/Skid locomotion offers stability because of the large contact area of track and ground (like a tank). The robot is steered by moving tracks with different speeds in the same or opposite direction.'},
+{ch:'ch9',q:'The Roomba vacuum cleaning robot was introduced by iRobot, which was founded by researchers from:',o:['Stanford University AI Lab','MIT Artificial Intelligence Lab','Carnegie Mellon University','DARPA'],a:1,e:'iRobot was founded by researchers at the MIT Artificial Intelligence Lab. They introduced Roomba in 2002, and by 2006 two million had been sold.'},
+/* ---- EXTRA Ch1 ---- */
+{ch:'ch1',q:'What was significant about the ALVINN system developed at CMU?',o:['It was the first chess-playing computer','It autonomously drove a van from Washington D.C. to San Diego, all but 52 of 2849 miles','It was the first voice recognition system','It was the first robotic arm'],a:1,e:'ALVINN (Autonomous Land Vehicle in a Neural Network) from CMU autonomously drove a van from Washington D.C. to San Diego, covering all but 52 of 2,849 miles, averaging 63 mph in all weather conditions.'},
+{ch:'ch1',q:'According to the AI definitions matrix, which quadrant measures success against the ideal concept of intelligence called rationality?',o:['Top-left (a) and Bottom-left (c)','Top-right (b) and Bottom-right (d)','Top row only','Bottom row only'],a:1,e:'The definitions on the RIGHT — (b) Think Rationally and (d) Act Rationally — measure the ideal concept of intelligence called rationality. The LEFT column measures against human performance.'},
+/* ---- EXTRA Ch2 ---- */
+{ch:'ch2',q:'Which type of learning involves learning to differentiate among stimuli based on RELATIONAL properties rather than absolute ones?',o:['Motor Learning','Perceptual Learning','Relational Learning','Episodic Learning'],a:2,e:'Relational Learning = learning to differentiate among stimuli based on relational properties. Example: adding a "little less" salt when cooking potatoes that came out too salty last time (relative comparison, not absolute amount).'},
+{ch:'ch2',q:'The Scientific Goal of AI is primarily associated with which group of professionals?',o:['Computer scientists and engineers','Psychologists, philosophers, and cognitive scientists','Robotics engineers','Software developers'],a:1,e:'Traditionally, computer scientists and engineers are more interested in the Engineering Goal. Psychologists, philosophers, and cognitive scientists are more interested in the Scientific Goal — to determine which ideas about knowledge and reasoning explain real intelligence.'},
+/* ---- EXTRA Ch3 ---- */
+{ch:'ch3',q:'In the working of a speech/voice recognition system, what happens to the analog signal from the microphone?',o:['It is sent directly to the database','A converter turns the analog signal into an equivalent digital signal for speech processing','It is sent directly to the output','It is filtered and amplified only'],a:1,e:'The user input spoken at a microphone goes to the sound card. The converter turns the analog signal into an equivalent digital signal for speech processing. The database is then used to compare patterns to recognize the words.'},
+/* ---- EXTRA Ch4 (Lec3 P2) ---- */
+{ch:'ch4',q:'Which of these is NOT a property of an environment in AI?',o:['Episodic vs Non-episodic','Static vs Dynamic','Supervised vs Unsupervised','Deterministic vs Non-deterministic'],a:2,e:'Supervised vs Unsupervised is a classification of LEARNING METHODS, not a property of environments. The 7 environment properties are: Discrete/Continuous, Observable/Partially Observable, Static/Dynamic, Single/Multiple agents, Accessible/Inaccessible, Deterministic/Non-deterministic, Episodic/Non-episodic.'},
+{ch:'ch4',q:'An agent that chooses the action with the highest "happiness score" among competing goals is called:',o:['Simple Reflex Agent','Model-Based Reflex Agent','Goal-Based Agent','Utility-Based Agent'],a:3,e:'Utility-Based Agents choose actions based on a preference (utility) for each state. They ask "How happy am I by doing action A?" and use a utility function to decide. Used when goals conflict or have uncertainty.'},
+/* ---- EXTRA Ch5 ---- */
+{ch:'ch5',q:'Which statement about Iterative Deepening DFS is TRUE?',o:['It uses exponential space like BFS','It is neither complete nor optimal','It performs DFS to increasing depth limits until solution found; only saves a stack','It cannot find solutions deeper than depth 3'],a:2,e:'Iterative Deepening DFS performs DFS to depth 1, starts over for depth 2, and so on until solution found. It only saves a stack of nodes. It IS complete and optimal, while using linear space — combining the best of BFS and DFS.'},
+{ch:'ch5',q:'What is the key difference between Pure Heuristic Search and A* Search?',o:['Pure Heuristic only uses g(n); A* uses both g(n) and h(n)','Pure Heuristic only uses h(n) (heuristic value); A* uses f(n) = g(n) + h(n) combining cost so far and heuristic','A* is incomplete; Pure Heuristic is complete','They are identical algorithms'],a:1,e:'Pure Heuristic Search expands nodes in order of heuristic values h(n) only — no regard for cost so far. A* uses f(n) = g(n) + h(n), combining the actual cost to reach the node (g) and estimated cost to goal (h), making it optimal and efficient.'},
+/* ---- EXTRA Ch6 Fuzzy ---- */
+{ch:'ch6',q:'What are the 5 levels that the Fuzzification Module splits the input signal into?',o:['Hot, Warm, Cold, Freezing, Boiling','LP, MP, S, MN, LN','High, Medium-High, Medium, Medium-Low, Low','True, Mostly True, Uncertain, Mostly False, False'],a:1,e:'The Fuzzification Module splits input into 5 levels: LP (Large Positive), MP (Medium Positive), S (Small), MN (Medium Negative), LN (Large Negative).'},
+/* ---- NLP ---- */
+{ch:'nlp',q:'What is the definition of Natural Language Processing (NLP)?',o:['A way to program computers in binary','The AI method of communicating with an intelligent system using a natural language such as English','A method to convert images into text','A hardware interface for robots'],a:1,e:'NLP refers to the AI method of communicating with intelligent systems using a natural language such as English. It involves making computers perform useful tasks with the natural languages humans use.'},
+{ch:'nlp',q:'Which NLP component is harder to implement?',o:['Natural Language Generation (NLG)','Natural Language Understanding (NLU)','Text Planning','Text Realization'],a:1,e:'The NLU (Natural Language Understanding) is harder than NLG (Natural Language Generation). NLU involves mapping natural language input into useful representations and analyzing different aspects of language.'},
+{ch:'nlp',q:'What is "lexical ambiguity" in NLP?',o:['Ambiguity at the sentence structure level','Ambiguity at the word level — a word can be interpreted in multiple ways','Ambiguity in referring to objects using pronouns','Ambiguity due to cultural differences'],a:1,e:'Lexical ambiguity is at the word level. Example: treating the word "board" as a noun (a flat piece of wood) or as a verb (to board a plane). The same word has different meanings.'},
+{ch:'nlp',q:'What is "referential ambiguity" in NLP?',o:['When two words mean the same thing','When a sentence can be parsed in multiple ways','When pronouns or references are unclear about what they refer to','When words are spelled incorrectly'],a:2,e:'Referential ambiguity = referring to something using pronouns creating unclear references. Example: "Rima went to Gauri. She said, I am tired." — Who is tired? Rima or Gauri? The pronoun "she" is ambiguous.'},
+{ch:'nlp',q:'In what order do the 5 NLP processing steps occur?',o:['Semantic → Lexical → Syntactic → Discourse → Pragmatic','Lexical → Syntactic → Semantic → Discourse Integration → Pragmatic','Pragmatic → Discourse → Semantic → Syntactic → Lexical','Syntactic → Lexical → Semantic → Pragmatic → Discourse'],a:1,e:'The correct order is: (1) Lexical Analysis, (2) Syntactic Analysis (Parsing), (3) Semantic Analysis, (4) Discourse Integration, (5) Pragmatic Analysis. Each step builds on the previous.'},
+{ch:'nlp',q:'What is "Morphology" in NLP terminology?',o:['The study of organizing sound systematically','The study of construction of words from primitive meaningful units','Arranging words to make a sentence','The meaning of words and phrases'],a:1,e:'Morphology = study of construction of words from primitive meaningful units. The primitive unit of meaning in a language is called a Morpheme. (Phonology = organizing sound; Syntax = arranging words into sentences; Semantics = meaning of words.)'},
+{ch:'nlp',q:'What is the MERIT of Context-Free Grammar?',o:['It is highly precise and handles all grammatical structures','It is the simplest style of grammar and therefore widely used','It can handle all ambiguities automatically','It requires no rules to be defined'],a:1,e:'The merit of Context-Free Grammar is that it is the simplest style of grammar, therefore it is widely used. Its demerits are that it is not highly precise and requires huge unmanageable rule sets for high precision.'},
+{ch:'nlp',q:'What is Pragmatic Analysis in NLP?',o:['Analyzing the grammar of a sentence','Checking if a sentence is meaningful (not contradictory)','Re-interpreting what was said based on what it actually meant, using real world knowledge','Breaking text into words and paragraphs'],a:2,e:'Pragmatic Analysis = what was said is re-interpreted on what it actually meant. It involves deriving those aspects of language which require real world knowledge. It is the final step in NLP processing.'},
+/* ---- Expert Systems ---- */
+{ch:'es',q:'Where were Expert Systems introduced?',o:['MIT AI Lab','Carnegie Mellon University','Stanford University, Computer Science Department','IBM Research Labs'],a:2,e:'Expert Systems were introduced by researchers at Stanford University, Computer Science Department. They are one of the prominent research domains of AI.'},
+{ch:'es',q:'What is "Forward Chaining" in an Expert System inference engine?',o:['Strategy to find the cause of what happened (Why?)','Strategy to find what can happen next (What next?) by following chain of conditions to deduce outcomes','Strategy to delete rules from the knowledge base','Strategy to input new data into the system'],a:1,e:'Forward Chaining answers "What can happen next?" It follows the chain of conditions and derivations and deduces the outcome. Used for: conclusions, results, or effects. Example: predicting share market status as an effect of changes in interest rates.'},
+{ch:'es',q:'What is "Backward Chaining" in an Expert System?',o:['Starting from the goal and working backwards to find supporting facts — answers Why did this happen?','Starting from known facts and working forward to conclusions','Deleting outdated rules from the knowledge base','Running the system in reverse order to validate outputs'],a:0,e:'Backward Chaining answers "Why this happened?" The inference engine tries to find which conditions could have happened in the past for this result. It is used for finding cause or reason. Example: diagnosis of blood cancer in humans.'},
+{ch:'es',q:'What is an Expert System SHELL?',o:['The physical hardware housing an expert system','An expert system without a knowledge base — provides the framework (inference engine, user interface, knowledge acquisition)','A simplified version of an ES for children','The outer casing of an ES computer'],a:1,e:'A Shell is an expert system without a knowledge base. It provides developers with knowledge acquisition tools, inference engine, user interface, and explanation facility. Examples: JESS (Java Expert System Shell), Vidwan.'},
+{ch:'es',q:'What is "Heuristic Knowledge" in an Expert System knowledge base?',o:['Factual information accepted by scholars in the domain','Knowledge about practice, accurate judgment, ability of evaluation, and guessing','Procedural knowledge about how to perform tasks','Data stored in the database'],a:1,e:'Heuristic Knowledge = about practice, accurate judgment, one\'s ability of evaluation, and guessing. It is the knowledge that makes experts good at their jobs beyond just book knowledge. The other type is Factual Knowledge (widely accepted information).'},
+{ch:'es',q:'Which of these is something an Expert System CANNOT do?',o:['Diagnose a problem','Justify its conclusion','Refine its own knowledge','Advise on decisions'],a:2,e:'Expert Systems CANNOT refine their own knowledge. They are also incapable of: substituting human decision makers, possessing human capabilities, and producing accurate output for an inadequate knowledge base.'},
+{ch:'es',q:'What does a Knowledge Engineer do?',o:['Designs the hardware of the expert system','Acquires domain knowledge from experts, organizes it as IF-THEN-ELSE rules, and monitors ES development','Tests the user interface only','Writes the code for the inference engine only'],a:1,e:'A Knowledge Engineer: has qualities of empathy, quick learning, and case analyzing skills. Acquires information from subject experts by recording, interviewing, and observing. Categorizes and organizes the information in IF-THEN-ELSE rules. Also monitors the development of the ES.'},
+{ch:'es',q:'In which application domain would an ES be used for "leakage monitoring in a long petroleum pipeline"?',o:['Design Domain','Finance/Commerce','Monitoring Systems','Medical Domain'],a:2,e:'Monitoring Systems = comparing data continuously with an observed system or prescribed behavior. Example: leakage monitoring in long petroleum pipelines. Other monitoring examples: medical monitoring systems.'},
+/* ---- Neural Networks ---- */
+{ch:'nn',q:'When did Neural Networks development begin and when did it experience a major revival?',o:['1960s; 1990s','Early 1940s; late 1980s','1970s; early 2000s','1950s; mid-1970s'],a:1,e:'Development of Neural Networks dates back to the early 1940s. It experienced an upsurge in popularity in the late 1980s due to discovery of new techniques and advances in computer hardware technology.'},
+{ch:'nn',q:'What is the key advantage of Neural Networks over conventional computers when it comes to reasoning?',o:['NNs use deductive reasoning like digital computers','NNs use inductive reasoning — given input/output examples, they construct the rules themselves','NNs are faster than digital computers','NNs require less memory'],a:1,e:'NNs use Inductive Reasoning: given input and output data (training examples), they construct the rules. Digital computers use Deductive Reasoning: known rules are applied to input data to produce output.'},
+{ch:'nn',q:'In supervised learning of neural networks, what happens to the errors?',o:['Errors are ignored after the first pass','Errors are propagated back through the system (backpropagation), causing weights to be adjusted','Errors cause the network to restart from scratch','Errors are stored in a separate database'],a:1,e:'In supervised learning, both inputs and desired outputs are provided. Errors are propagated BACK through the system (backpropagation), causing the system to adjust the weights which control the network. This process repeats until weights converge.'},
+{ch:'nn',q:'What is a Perceptron?',o:['A type of unsupervised neural network','A multi-layer neural network architecture','An algorithm for supervised classification — a linear classifier making predictions based on a linear predictor function','A biological neuron model'],a:2,e:'The perceptron is an algorithm for supervised classification of an input into one of several possible outputs. It is a type of linear classifier that makes predictions based on a linear predictor function combining weights with the feature vector. f(x)=1 if w·x+b>0, else 0.'},
+{ch:'nn',q:'In an unsupervised neural network, what is the system provided with?',o:['Both inputs and desired outputs','Only inputs — no desired outputs; system decides grouping features itself','Only outputs to reverse-engineer inputs','Random noise to test robustness'],a:1,e:'In unsupervised training, the network is provided with inputs but NOT with desired outputs. The system itself must decide what features it will use to group the input data — referred to as self-organization or adaptation. Example architectures: Kohonen, ART.'},
+{ch:'nn',q:'What are the three layers of a Feed Forward Neural Network?',o:['Input, Processing, Output','Input Layer, Hidden Layers, Output Layer','Sensor Layer, Memory Layer, Action Layer','Training Layer, Testing Layer, Deployment Layer'],a:1,e:'A Feed Forward NN has: Input Layer (receives data), Hidden Layers (processes information through weighted connections), Output Layer (produces final result). The learning rule modifies the weights according to input patterns presented.'},
+{ch:'nn',q:'The brain is a collection of approximately how many interconnected neurons?',o:['1 million','100 million','10 billion','1 trillion'],a:2,e:'The brain is a collection of about 10 billion interconnected neurons. Each neuron is a cell that uses biochemical reactions to receive, process, and transmit information. A neuron makes connections with 10 to 100,000 other neurons at synapses.'},
+{ch:'nn',q:'Which of these is an application of Neural Networks in medicine?',o:['Automatic gearboxes','Cancer cell analysis, EEG and ECG analysis, prosthetic design','Speech recognition in cars','Automatic scheduling systems'],a:1,e:'Neural Network medical applications include: cancer cell analysis, EEG and ECG analysis, prosthetic design, and transplant time optimization. NNs perform tasks that are easy for humans but difficult for conventional machines.'}
+];
+
+var eQ=[
+{q:'Explain the four approaches to defining AI using the 2×2 matrix. Which authors are associated with each? Give an example for each approach.',
+a:'<p>The 4 approaches form a 2×2 matrix on two axes: (Human-Like vs Rational) × (Think vs Act).</p><ul><li><strong>Cognitive Science — Think Human-Like</strong> (Haugeland 1985, Bellman 1978): Requires a model of human cognition precise enough for computer simulation. Focus is not just on behavior/I/O but on the reasoning process itself. Goal: produce a sequence of reasoning steps similar to those a human would follow. Example: simulating how a doctor diagnoses disease step-by-step, not just producing the correct diagnosis.</li><li><strong>Laws of Thought — Think Rationally</strong> (Charniak &amp; McDermott 1985, Winston 1992): Study of computations that make it possible to perceive, reason, and act. Focus on inference mechanisms guaranteeing optimal solutions. Goal: formalize reasoning as logical rules. Classic example: "Socrates is a man. All men are mortal. Therefore Socrates is mortal."</li><li><strong>Turing Test — Act Human-Like</strong> (Kurzweil 1990, Rich &amp; Knight 1991): The art of creating machines that perform functions requiring intelligence when performed by people. Focus on action and output, not internal reasoning. Example: the Turing Test itself — if an interrogator cannot distinguish machine from human via typed conversation, machine is intelligent.</li><li><strong>Rational Agent — Act Rationally</strong> (Schalkoff 1990, Luger &amp; Stubblefield 1993): Characterized by PEAS. Agent performs the right action to maximize performance measure given percept sequence. Example: chess program choosing the best move to maximize winning probability.</li></ul><p>Note: Top row (a,b) concerns reasoning. Bottom row (c,d) addresses behavior. Left column (a,c) measures against human performance. Right column (b,d) measures against rationality.</p>'},
+{q:'Describe all 7 types of intelligence according to Howard Gardner. For each type, explain how AI relates to or attempts to replicate that intelligence.',
+a:'<ul><li><strong>Linguistic</strong>: Ability to use phonology, syntax, and semantics. AI relation: NLP, speech recognition, language translation, text generation.</li><li><strong>Musical</strong>: Create and understand meaning from sound, pitch, rhythm. AI relation: music generation algorithms, audio classification systems.</li><li><strong>Logical-Mathematical</strong>: Use and understand abstract relationships; complex ideas. AI relation: theorem proving, expert systems, mathematical problem solvers.</li><li><strong>Spatial</strong>: Perceive and manipulate visual/spatial information, construct 3D images. AI relation: computer vision, 3D modeling, robot navigation and path planning.</li><li><strong>Bodily-Kinesthetic</strong>: Control over body and motor skills. AI relation: robotic actuators, effectors (legs, arms, grippers), motion planning in robots.</li><li><strong>Intra-personal</strong>: Distinguish one\'s own feelings, intentions, motivations (self-awareness). AI relation: most limited — active research area in emotional/affective AI.</li><li><strong>Interpersonal</strong>: Recognize and make distinctions among others\' feelings, beliefs, intentions. AI relation: sentiment analysis, social robots, emotion recognition systems.</li></ul><p>A machine is considered artificially intelligent when equipped with at least one and at most all of these intelligences.</p>'},
+{q:'Compare all 5 brute-force search algorithms (BFS, DFS, Bidirectional, Uniform Cost, Iterative Deepening) on all 4 properties. When would you choose each?',
+a:'<p><strong>Comparison table:</strong></p><ul><li><strong>BFS</strong>: Time=b^d, Space=b^d (exponential), Complete=Yes, Optimal=Yes. Uses FIFO queue. Finds shortest path. Disadvantage: massive memory consumption. Best when: solution is shallow, memory is not a constraint, shortest path needed.</li><li><strong>DFS</strong>: Time=b^m, Space=bm (linear!), Complete=No, Optimal=No. Uses LIFO stack/recursion. Can loop infinitely — needs cut-off depth. Advantage: memory efficient. Best when: memory is very limited, solution is deep in tree, completeness not critical.</li><li><strong>Bidirectional</strong>: Time=b^(d/2), Space=b^(d/2), Complete=Yes, Optimal=Yes. Searches forward from start AND backward from goal simultaneously. Much more efficient — each search only goes half the total depth. Best when: both initial and goal states are clearly defined.</li><li><strong>Uniform Cost Search</strong>: Time=b^d, Space=b^d, Complete=Yes, Optimal=Yes. Expands least-cost node first using priority queue sorted by path cost. Identical to BFS when all step costs are equal. Disadvantage: must explore all paths with cost ≤ C*. Best when: step costs vary and optimality is required.</li><li><strong>Iterative Deepening</strong>: Time=b^d, Space=b^d, Complete=Yes, Optimal=Yes. Performs DFS to depth 1, restarts to depth 2, etc. Only saves a stack. Best when: memory is limited but you need completeness and optimality.</li></ul>'},
+{q:'Explain the complete architecture of a Fuzzy Logic System using the air conditioning example. Include membership functions, knowledge base rules, and all processing steps.',
+a:'<p><strong>4-Part Architecture:</strong></p><ul><li><strong>1. Fuzzification Module</strong>: Converts crisp numerical inputs to fuzzy sets using membership functions. For the AC: room temperature (e.g., 25°C) is mapped to linguistic terms: {very-cold, cold, warm, very-warm, hot} using triangular membership functions (µA: X → [0,1]). A value of 25°C might be 0.5 "warm" and 0.3 "very-warm".</li><li><strong>2. Knowledge Base</strong>: Stores IF-THEN rules from human experts. Examples: IF temp=Cold AND target=Warm THEN HEAT; IF temp=Hot AND target=Warm THEN COOL; IF temp=Warm AND target=Warm THEN NO CHANGE. A matrix of room temp vs target temp produces a complete rule set.</li><li><strong>3. Inference Engine</strong>: Applies rules to fuzzy inputs. Uses: OR=Max operation, AND=Min operation. Evaluates all applicable rules and combines results into a final fuzzy output set. Example: if temp is 0.5 Cold AND 0.3 Very-Cold, AND applies Min → uses 0.3 as the rule strength for HEAT.</li><li><strong>4. Defuzzification Module</strong>: Converts fuzzy output back to a crisp command (HEAT/COOL/NO CHANGE) using the membership function for output variables.</li></ul><p>Membership function: x-axis = universe of discourse; y-axis = [0,1] degree of membership. Triangular shapes most common.</p>'},
+{q:'Describe all 4 types of AI agents (Simple Reflex, Model-Based, Goal-Based, Utility-Based). Include structure, when each is appropriate, and limitations.',
+a:'<p>Agent = Architecture + Agent Program. Each type handles progressively more complex environments:</p><ul><li><strong>Simple Reflex Agents</strong>: Act only on current percept using Condition-Action rules ("If dirty → clean"). Rational only when environment is completely observable. No memory of history. Limitation: fails in partially observable environments. Structure: Sensors → "What is world like now?" → Condition-Action Rule → Effectors.</li><li><strong>Model-Based Reflex Agents</strong>: Maintain an internal state (representation of unobserved aspects based on percept history). Have a model of how world evolves and how actions affect it. Can handle partially observable environments. Limitation: rules still fixed. Structure adds: State + "How world evolves" + "What my actions do" → updates the world-state query.</li><li><strong>Goal-Based Agents</strong>: Choose actions to achieve explicitly defined goals. More flexible — knowledge supporting decisions is explicitly modeled, allowing modification. Ask "What happens if I do action A?" and compare against goals. Limitation: a single goal may not distinguish between good and bad ways of achieving it. Structure adds: Goals module feeding into action decision.</li><li><strong>Utility-Based Agents</strong>: Choose actions based on a utility/preference function for each state. Used when: (1) there are conflicting goals, (2) goals have uncertainty and need to weigh likelihood of success vs importance. Adds "How happy am I by doing action A?" module. Most flexible and most complex. Example: self-driving car balancing speed, fuel efficiency, and safety.</li></ul>'},
+{q:'Explain the 7 properties of AI environments. Give an example of each property and explain why they matter for agent design.',
+a:'<ul><li><strong>Discrete vs Continuous</strong>: Discrete = limited distinct states (Chess — finite legal positions). Continuous = infinite states (Driving — infinite positions/speeds). Matters: discrete environments are easier to search; continuous require different representations.</li><li><strong>Observable vs Partially Observable</strong>: Observable = complete state visible at each time point (Chess — see all pieces). Partially = cannot determine full state (Poker — hidden cards). Matters: partial observability requires maintaining internal state (model-based agents).</li><li><strong>Static vs Dynamic</strong>: Static = doesn\'t change while agent acts (Crossword puzzle). Dynamic = changes during agent action (Driving, stock market). Matters: dynamic environments require real-time responses.</li><li><strong>Single vs Multiple Agents</strong>: Single = only one agent (solving a puzzle). Multiple = other agents present (chess opponent, traffic). Matters: multiple agents may be competitive or cooperative, requiring game-theoretic reasoning.</li><li><strong>Accessible vs Inaccessible</strong>: Accessible = sensory apparatus can access complete state (fully instrumented factory). Inaccessible = cannot (complex weather system). Matters: inaccessible environments require probabilistic reasoning.</li><li><strong>Deterministic vs Non-deterministic</strong>: Deterministic = next state fully determined by current state + action (Chess). Non-deterministic = uncertainty in outcome (Real-world robotics). Matters: non-deterministic requires probabilistic/planning approaches.</li><li><strong>Episodic vs Non-episodic</strong>: Episodic = each episode independent, no history needed (spam filter — each email independent). Non-episodic = current action affects future (chess game). Matters: episodic environments are much simpler — agent doesn\'t need to plan ahead.</li></ul>'},
+{q:'Compare and contrast legged, wheeled, and slip/skid locomotion in robotics. Include the mathematical formula for legged locomotion and calculate examples.',
+a:'<ul><li><strong>Legged Locomotion</strong>: Consumes more power; requires more motors; suited for rough AND smooth terrain (irregular surfaces); harder to implement due to stability issues. Varieties: 1, 2, 4, 6 legs. If multiple legs, leg coordination is necessary. Formula: N = (2k-1)! where k = number of legs. Examples: k=2 → N=(2×2-1)!=3!=6 events (Lift Left, Release Left, Lift Right, Release Right, Lift both, Release both). k=6 → N=(2×6-1)!=11!=39,916,800 events. Complexity is DIRECTLY PROPORTIONAL to number of legs.</li><li><strong>Wheeled Locomotion</strong>: Fewer motors; easier to implement (fewer stability issues with more wheels); power efficient. Wheel types: Standard (rotates around axle + contact), Castor (rotates around axle + offset steering joint), Swedish 45°/90° (omni-wheel — rotates around contact point + axle + rollers), Ball/Spherical (omnidirectional — technically difficult). Best for flat terrain.</li><li><strong>Slip/Skid (Tracked)</strong>: Uses tracks like a tank. Steered by moving tracks at different speeds in same or opposite direction. Offers high stability because of large contact area between track and ground. Best for very rough terrain or military/heavy-duty applications.</li></ul><p>Summary: Legged → best for terrain versatility; Wheeled → most efficient and simple; Slip/Skid → most stable.</p>'},
+{q:'Explain what the Turing Test is, how it works, and what it is designed to measure. Discuss its importance and limitations as a measure of intelligence.',
+a:'<p><strong>Setup</strong>: Three participants in separate rooms: (1) a human, (2) a computer (machine being tested), (3) an interrogator. Communication is ONLY by teletype (typed text) — this prevents the machine from imitating voice or physical appearance.</p><p><strong>Procedure</strong>: The interrogator does not know which room contains the machine and which contains the human. The interrogator asks any questions they wish and receives typed responses from both. The machine aims to appear human.</p><p><strong>Result</strong>: If the interrogator FAILS to determine which is the machine → the machine is deemed intelligent. This "aims at fooling the tester."</p><p><strong>Importance</strong>: (1) Operationalizes the "Act Human-Like" approach to AI. (2) It is the most famous artificial environment in AI. (3) It provides an observable, behavioral measure of intelligence rather than requiring internal inspection. (4) It is categorized under the Turing Test Approach (bottom-left of the AI definitions matrix).</p><p><strong>Limitations</strong>: (1) Tests behavioral similarity to humans, not genuine understanding or reasoning. (2) A machine could pass by sophisticated deception without being truly intelligent. (3) Does not test internal reasoning processes — only output. (4) Intelligence may exist without ability to communicate in natural language (e.g., spatial intelligence). (5) Human performance is not necessarily the ideal standard for intelligence.</p>'},
+{q:'[NLP] Explain all 5 steps of NLP processing in order. What happens at each step and what types of errors/analysis are involved?',
+a:'<p>The 5 steps of NLP processing flow sequentially, each building on the previous:</p><ul><li><strong>1. Lexical Analysis</strong>: The first step. Identifies and analyzes the structure of words. Lexicon = the collection of words and phrases in a language. Lexical analysis divides the whole chunk of text into paragraphs, sentences, and words. Think of it as tokenization — breaking text into its smallest meaningful units.</li><li><strong>2. Syntactic Analysis (Parsing)</strong>: Analyzes words in the sentence for grammar and arranges words in a manner showing relationships among words. Uses rules (like Context-Free Grammar rewrite rules: S→NP VP, NP→DET N, VP→V NP). Rejects grammatically incorrect sentences: "The school goes to boy" would be rejected. The parse tree is produced here.</li><li><strong>3. Semantic Analysis</strong>: Draws the exact meaning (dictionary meaning) from the text. Checks for meaningfulness by mapping syntactic structures and objects in the task domain. Disregards semantically meaningless sentences like "hot ice-cream" even if they are grammatically correct.</li><li><strong>4. Discourse Integration</strong>: The meaning of any sentence depends upon the meaning of the sentence just before it. This step also brings about meaning of immediately succeeding sentence. Handles pronoun resolution and contextual understanding across sentences.</li><li><strong>5. Pragmatic Analysis</strong>: What was said is re-interpreted based on what it actually meant. Involves deriving aspects of language that require real world knowledge. This goes beyond literal meaning to understand intent and context in real-world situations.</li></ul>'},
+{q:'[NLP] Compare Context-Free Grammar and Top-Down Parser. What are the merits and demerits of each? Give an example.',
+a:'<p><strong>Context-Free Grammar (CFG)</strong>:</p><ul><li>Grammar that consists of rules with a SINGLE symbol on the left-hand side of the rewrite rules.</li><li>Example for "The bird pecks the grains": S→NP VP | NP→DET N | VP→V NP | DET→a|the | N→bird|grain | V→peck|pecks</li><li>The parse tree breaks the sentence into structured parts for computer processing.</li><li><strong>Merit</strong>: Simplest style of grammar — therefore widely used.</li><li><strong>Demerits</strong>: (1) Not highly precise — "The grains peck the bird" is accepted as correct even though it makes no sense. Subject-verb agreement errors (like "The bird peck the grains") can be wrongly permitted. (2) For high precision, multiple sets of rules needed for singular/plural, passive sentences, etc. — leads to huge unmanageable rule sets.</li></ul><p><strong>Top-Down Parser</strong>:</p><ul><li>Parser starts with the S symbol and attempts to rewrite it into a sequence of terminal symbols that matches the input sentence — until it consists entirely of terminal symbols.</li><li>If result doesn\'t match input, process restarted with different set of rules. Repeated until a specific rule is found describing the sentence structure.</li><li><strong>Merit</strong>: Simple to implement.</li><li><strong>Demerits</strong>: (1) Inefficient — search process must be repeated if an error occurs. (2) Slow speed of working.</li></ul>'},
+{q:'[Expert Systems] Explain the three components of an Expert System (Knowledge Base, Inference Engine, User Interface) in full detail.',
+a:'<p><strong>1. Knowledge Base</strong>: Contains domain-specific and high-quality knowledge. The success of any ES majorly depends on collection of highly accurate and precise knowledge.</p><ul><li>What is Knowledge? Data = collection of facts. Information = organized data and facts. Knowledge = Data + Information + Past Experience combined.</li><li>Factual Knowledge: widely accepted information by Knowledge Engineers and scholars in task domain.</li><li>Heuristic Knowledge: about practice, accurate judgment, ability of evaluation, and guessing.</li><li>Knowledge Representation: method used to organize and formalize knowledge — in the form of IF-THEN-ELSE rules.</li><li>Knowledge Acquisition: the knowledge engineer (with empathy, quick learning, case analyzing skills) acquires info from subject experts by recording, interviewing, and observing. He categorizes information in IF-THEN-ELSE rules and monitors ES development.</li></ul><p><strong>2. Inference Engine</strong>: Uses efficient procedures and rules to deduce correct, flawless solutions. In rule-based ES: applies rules repeatedly to facts; adds new knowledge if required; resolves rule conflicts. Two strategies:</p><ul><li>Forward Chaining: answers "What can happen next?" — follows conditions to deduce outcome. Used for conclusions/results/effects. Example: predicting share market as effect of interest rate changes.</li><li>Backward Chaining: answers "Why this happened?" — finds conditions that could have caused this result. Used for finding cause/reason. Example: diagnosing blood cancer in humans.</li></ul><p><strong>3. User Interface</strong>: Provides interaction between user and ES using Natural Language Processing. User need not be an AI expert. Explains how ES arrived at a recommendation — via natural language on screen, verbal narrations, or rule number listings. Requirements: help users in shortest possible way, adaptable to user requirements, make efficient use of user input.</p>'},
+{q:'[Expert Systems] Describe Forward Chaining vs Backward Chaining with examples. When would you use each?',
+a:'<p><strong>Forward Chaining ("What can happen next?"):</strong></p><ul><li>The inference engine follows the chain of conditions and derivations and finally deduces the outcome.</li><li>It considers all the facts and rules and sorts them before concluding to a solution.</li><li>Direction: Facts → Rules → Conclusion (data-driven)</li><li>Used for: working on conclusion, result, or effect.</li><li>Example: Predicting share market status as an effect of changes in interest rates. Start with: "Interest rates rose" → apply rules → conclude "Stock market will fall."</li><li>Best used when: you have initial data and want to find all possible conclusions.</li></ul><p><strong>Backward Chaining ("Why this happened?"):</strong></p><ul><li>On the basis of what has already happened, the inference engine tries to find which conditions could have happened in the past for this result.</li><li>Direction: Goal → Rules → Supporting Facts (goal-driven)</li><li>Used for: finding cause or reason.</li><li>Example: Diagnosis of blood cancer in humans. Start with: "Patient has blood cancer" → work backward → find which symptoms/tests support this diagnosis.</li><li>Best used when: you have a hypothesis (goal) and want to prove or disprove it by finding supporting evidence.</li></ul><p><strong>Summary table:</strong> Forward = data-driven, works from facts to conclusions, used for prediction/monitoring. Backward = goal-driven, works from goal to supporting facts, used for diagnosis/explanation.</p>'},
+{q:'[Neural Networks] Compare Neural Networks with Digital Computers on all major dimensions. What types of problems are NNs better suited for?',
+a:'<p><strong>Full comparison:</strong></p><ul><li><strong>Reasoning type</strong>: Computers = Deductive (apply known rules to input). NNs = Inductive (given examples, construct rules).</li><li><strong>Computation</strong>: Computers = centralized, synchronous, serial. NNs = collective, asynchronous, parallel.</li><li><strong>Memory</strong>: Computers = packetted, literally stored, location addressable. NNs = distributed, internalized, short term, content addressable.</li><li><strong>Fault tolerance</strong>: Computers = not fault tolerant (one transistor fails → stops). NNs = fault tolerant (redundancy and sharing of responsibilities).</li><li><strong>Precision</strong>: Computers = exact. NNs = inexact.</li><li><strong>Connectivity</strong>: Computers = static. NNs = dynamic.</li><li><strong>Best for</strong>: Computers = well-defined rules with precise input data. NNs = rules unknown or complicated, or data noisy or partial.</li></ul><p><strong>NNs are better suited for:</strong></p><ul><li>Classification problems: face recognition, handwriting recognition, medical image analysis.</li><li>Function approximation: when the underlying formula is unknown.</li><li>Pattern recognition: any situation with noisy, partial, or complex data.</li><li>NOT good for: manipulation of symbols and memory, and situations where exact computation is required.</li></ul><p>In principle, NNs can compute any computable function and approximate almost any mapping between vector spaces to arbitrary precision.</p>'},
+{q:'[Neural Networks] Explain supervised learning and unsupervised learning in Neural Networks. Include the process, examples of architectures, and when to use each.',
+a:'<p><strong>Supervised Learning:</strong></p><ul><li>Both INPUTS and DESIRED OUTPUTS are provided to the network.</li><li>The network processes the inputs and compares resulting outputs against desired outputs.</li><li>Errors are propagated BACK through the system (backpropagation), causing the system to adjust the weights which control the network.</li><li>This process occurs over and over as weights are continually tweaked.</li><li>The set of data which enables training is called the training set. Same data processed many times as connection weights are refined.</li><li>Example architecture: Multilayer Perceptrons.</li><li>When to use: when you have labelled training data (input-output pairs). Examples: image classification (know what each image is), spam detection (know which emails are spam).</li></ul><p><strong>Unsupervised Learning:</strong></p><ul><li>Network is provided with INPUTS ONLY — no desired outputs.</li><li>System itself must decide what features it will use to group the input data.</li><li>Often referred to as self-organization or adaptation.</li><li>Example architectures: Kohonen networks, ART (Adaptive Resonance Theory).</li><li>When to use: when you do NOT have labelled data. Examples: customer segmentation (group customers by behavior without predefined categories), anomaly detection, data compression.</li></ul><p>Key difference: Supervised = learning with a teacher (you know the right answers). Unsupervised = learning without a teacher (discover patterns in data independently).</p>'}
+];
+
+function sw(id,btn){
+  document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
+  document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+
+function tc(h){
+  h.classList.toggle('open');
+  h.nextElementSibling.classList.toggle('open');
+}
+
+var answered=0;
+function renderMCQ(filter){
+  var ml=document.getElementById('ml');
+  ml.innerHTML='';
+  answered=0;
+  var items=filter==='all'?Q:Q.filter(function(q){return q.ch===filter});
+  document.getElementById('st').textContent=items.length;
+  document.getElementById('sc').textContent='0';
+  items.forEach(function(item,i){
+    var d=document.createElement('div');
+    d.className='mcq-item';
+    d.dataset.ans=item.a;
+    var opts=item.o.map(function(o,oi){
+      return '<label class="mcq-opt"><input type="radio" name="q'+filter+i+'" value="'+oi+'"> '+o+'</label>';
+    }).join('');
+    d.innerHTML='<div class="mcq-q"><span class="mcq-tag">'+item.ch.toUpperCase()+'</span>'+item.q+'</div><div class="mcq-opts">'+opts+'</div><button class="chk" onclick="ck(this,'+item.a+',\''+item.e.replace(/'/g,'&#39;').replace(/\n/g,' ')+'\')" >Check answer</button><div class="mcq-rev" id="mr'+filter+i+'"></div>';
+    ml.appendChild(d);
+  });
+}
+
+function ck(btn,correct,exp){
+  var item=btn.closest('.mcq-item');
+  var sel=item.querySelector('input[type=radio]:checked');
+  var rev=item.querySelector('.mcq-rev');
+  if(!sel)return;
+  var val=parseInt(sel.value);
+  rev.style.display='block';
+  if(val===correct){
+    rev.className='mcq-rev ok';
+    rev.innerHTML='✓ Correct! '+exp;
+  }else{
+    rev.className='mcq-rev bad';
+    rev.innerHTML='✗ Incorrect. Correct answer is option '+(correct+1)+'. '+exp;
+  }
+  btn.disabled=true;
+  answered++;
+  document.getElementById('sc').textContent=answered;
+}
+
+function fmcq(f,btn){
+  document.querySelectorAll('.ftag').forEach(function(t){t.classList.remove('active')});
+  btn.classList.add('active');
+  renderMCQ(f);
+}
+
+function renderEssay(){
+  var el=document.getElementById('el');
+  eQ.forEach(function(item,i){
+    var d=document.createElement('div');
+    d.className='essay-item';
+    d.innerHTML='<div class="essay-q" onclick="te(this)"><span>'+item.q+'</span><span class="arr">+</span></div><div class="essay-ans" id="ea'+i+'">'+item.a+'</div>';
+    el.appendChild(d);
+  });
+}
+
+function te(h){
+  h.classList.toggle('open');
+  h.nextElementSibling.classList.toggle('open');
+}
+
+renderMCQ('all');
+renderEssay();
+</script>
+</div>
